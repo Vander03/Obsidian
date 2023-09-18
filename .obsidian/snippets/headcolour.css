@@ -1,0 +1,5 @@
+.cm-s-obsidian .cm-header-2, 
+.markdown-preview-view h2 { 
+        font-weight: 450; 
+        color: rgb(139, 108, 239); /* was(115, 98, 205); */ 
+} 

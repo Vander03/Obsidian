@@ -1,0 +1,13 @@
+{
+  "accentColor": "",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "styles",
+    "bold",
+    "headcolour",
+    "commentcolor",
+    "underlinecolor",
+    "linkcolor"
+  ],
+  "translucency": false
+}

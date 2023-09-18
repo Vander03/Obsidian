@@ -1,0 +1,16 @@
+
+.cm-s-obsidian span.cm-hmd-internal-link,
+.cm-link {
+	
+        color: rgb(57, 255, 20) !important; /* was(115, 98, 205); */ 
+} 
+.cm-s-obsidian span.cm-hmd-internal-link,
+.cm-underline { 
+	text-decoration-line: none !important;
+}
+
+.cm-s-obsidian span.cm-hmd-internal-link,
+.is-unresolved{ 
+	color: rgb(57, 255, 20);
+}
+
