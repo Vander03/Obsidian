@@ -1,0 +1,13 @@
+.cm-s-obsidian .cm-comment, 
+.cm-hmd-codeblock comment { 
+        font-weight: 450; 
+        color: rgb(57, 255, 20); /* was(115, 98, 205); */ 
+<<<<<<< HEAD
+}
+=======
+} 
+>>>>>>> origin/main
+.cm-s-obsidian .cm-comment, 
+.token.comment {
+        color: rgb(57, 255, 20) !important; /* was(115, 98, 205); */ 
+}

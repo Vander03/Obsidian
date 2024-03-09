@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "60ba47b6d04c8668",
+    "type": "split",
+    "children": [
+      {
+        "id": "012c05a2bdea370f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce377dd2dbed88a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript/Modern UI.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "750a09a6c7188e76",
+    "type": "split",
+    "children": [
+      {
+        "id": "802d4fa4ddf8627b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32b6a72a02c69bd2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d10089f876c55aad",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "316212e4d923f910",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "f23561fbe5499cff",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 220.50390243530273
+  },
+  "right": {
+    "id": "84cb43bb8b7ef82e",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f7516182dcad29a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ef1d7b94a09bb54",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Javascript/Modern UI.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7144784e240cef3d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Javascript/Modern UI.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d9f7f46d1310c8c0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c2477beaf4007652",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Javascript/Modern UI.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ce377dd2dbed88a0",
+  "lastOpenFiles": [
+    "Website Design/Tut 1.md",
+    "Javascript/Arrays.md",
+    "Javascript/Modern UI.md",
+    "Javascript/Objects.md",
+    "Javascript/Useful Commands.md",
+    "Javascript/Web Content.md",
+    "CAB202/attachments/Pasted image 20240308191138.png",
+    "CAB301/Introduction to Algorithms and Complexity.md",
+    "Java/Useful Functions.md",
+    "Java/JavaFX.md",
+    "Java/Abstract Classes, Concrete Classes and Interfaces.md",
+    "CAB301/Tut1.md",
+    "CAB203/Bits and Data Representations.md",
+    "Website Design/CSS.md",
+    "Website Design/User Centred Design.md",
+    "Website Design/Usability.md",
+    "Website Design/Layout and semantics.md",
+    "Website Design/HTML.md",
+    "Code Snippets/deadlock1.md",
+    "System Programming/CPU Scheduling.md",
+    "System Programming/Distributed Systems.md",
+    "CAB202/attachments/Pasted image 20240308145202.png",
+    "Team Management.md",
+    "Code Snippets/bbufferProducer.md",
+    "Code Snippets/bbufferConsumer.md",
+    "CAB202/attachments/Pasted image 20240305235103.png",
+    "CAB202/attachments/Pasted image 20240305233950.png",
+    "CAB202/attachments/Pasted image 20240305233817.png",
+    "Javascript",
+    "Java/Java Basics.md",
+    "CAB202/attachments/Pasted image 20240301184427.png",
+    "CAB301",
+    "My Second Brain/Algorithm.md",
+    "EGB242/MATLAB Notes.md",
+    "Java",
+    "CAB203",
+    "CAB202/attachments/Pasted image 20231017110706.png",
+    "CAB202/attachments/Pasted image 20231017110655.png",
+    "CAB202/attachments/Pasted image 20231017110039.png",
+    "CAB202/attachments/Pasted image 20230919215616.png",
+    "Code Snippets",
+    "CSS",
+    "Untitled.canvas",
+    "C - Programming",
+    "My Second Brain/Home Page.canvas",
+    "My Second Brain/allign.txt",
+    "My Second Brain",
+    "PNGs"
+  ]
+}
