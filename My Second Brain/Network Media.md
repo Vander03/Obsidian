@@ -1,5 +1,5 @@
 #cs
-Network media are the materials through which [[Networks|Network]] signals travel between devices. Typical examples include copper [[Cables]] or glass fiber or simply the air. When physical material is used as the [[Network Communication#Hardward Component|Medium]], it refers to wired networking and when signals are transmitted through the air, the medium is called [[Wireless]].
+Network media are the materials through which [[Networks|Network]] signals travel between devices. Typical examples include copper [[Cables]] or glass fiber or simply the air. When physical material is used as the [[My Second Brain/Network Communication#Hardward Component|Medium]], it refers to wired networking and when signals are transmitted through the air, the medium is called [[Wireless]].
 
 ## Criteria for Choosing Network Media
 All cables share certain fundamental characteristics such as bandwidth, distance, interference, ease of installation, cost, and security.
@@ -11,7 +11,7 @@ Bandwidth is the amount of data that can be carried from one point to another fo
 - Not related with MB/s (Megabytes per second or GB/s, Gigabytes per second)
 
 ### Maximum Segment Length 
-A cable segment is a length of cable between two network devices, such as [[Network Communication#Hardward Component|NICs]] or [[Network Communication#Hardward Component|Switches]]. Any intermediate passive (unpowered) devices, such as wall jacks are considered part of the total segment length. 
+A cable segment is a length of cable between two network devices, such as [[My Second Brain/Network Communication#Hardward Component|NICs]] or [[My Second Brain/Network Communication#Hardward Component|Switches]]. Any intermediate passive (unpowered) devices, such as wall jacks are considered part of the total segment length. 
 
 Each cable type can transport data at a particular speed only so far before its signal begins to weaken past (called attenuation).
 

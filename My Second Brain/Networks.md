@@ -17,7 +17,7 @@ Internet History:
 - [[Network Control Protocol]]
 - [[Interface Message Processor]]
 - [[ARPANET]]
-[[Network Communication]]:
+[[My Second Brain/Network Communication]]:
 - [[Ethernet]]
 - [[LAN, WAN, MAN]]
 [[Network Architecture]]:

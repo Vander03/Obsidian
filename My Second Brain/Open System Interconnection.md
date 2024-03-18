@@ -2,7 +2,7 @@
 alias: OSI
 ---
 #cs
-The Open Systems Interconnection Model (OSI Model) is a conceptual model from the International Organisation for Standardisation (ISO) that provides a common framework for developers and students of [[Networks|Networking]] to work with and learn from. It is not specific to any protocol suite and can be applied to most networking protocols. It's also well known and acknowledged as the baseline for categorisation of [[Network Communication]] functions. 
+The Open Systems Interconnection Model (OSI Model) is a conceptual model from the International Organisation for Standardisation (ISO) that provides a common framework for developers and students of [[Networks|Networking]] to work with and learn from. It is not specific to any protocol suite and can be applied to most networking protocols. It's also well known and acknowledged as the baseline for categorisation of [[My Second Brain/Network Communication]] functions. 
 
 ## Structure of the OSI Model
 The structure consists of a seven layers organisation of how data travels from place to place on any given network. Each layer provides services to the next higher layer until it reaches the application layer.
@@ -30,9 +30,9 @@ The Transport layer manages data transfer from one application to another across
 ![[Pasted image 20230725112441.png|500]]
 
 ### Network Layer
-The Network layer performs logical addressing, maps between logical network addresses (IP addresses) into physical addresses, performs routing (i.e. selects the best path) [[Network Communication#Hardward Component|Routers]] operate at this layer.
+The Network layer performs logical addressing, maps between logical network addresses (IP addresses) into physical addresses, performs routing (i.e. selects the best path) [[My Second Brain/Network Communication#Hardward Component|Routers]] operate at this layer.
 
-This layer is where IP [[Network Communication#Software Component|Protocols]] operate and is the heart of the [[Internet Protocol Suite|TCP/IP]] protocol suite. Protocols related at this layer include: [[Internet Protocol]] (IP), [[Address Resolution Protocol]] (ARP), Internet Control Message Protocol (ICMP) and IPsec. 
+This layer is where IP [[My Second Brain/Network Communication#Software Component|Protocols]] operate and is the heart of the [[Internet Protocol Suite|TCP/IP]] protocol suite. Protocols related at this layer include: [[Internet Protocol]] (IP), [[Address Resolution Protocol]] (ARP), Internet Control Message Protocol (ICMP) and IPsec. 
 
 This layer is responsible for four main tasks:
 - Defines and verifies IP addresses

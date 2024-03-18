@@ -1,22 +1,9 @@
 {
   "accentColor": "",
-<<<<<<< HEAD
-  "baseFontSize": 13,
-=======
-  "baseFontSize": 16,
->>>>>>> origin/main
   "enabledCssSnippets": [
-    "styles",
     "bold",
-    "headcolour",
     "commentcolor",
-    "underlinecolor",
+    "headcolour",
     "linkcolor"
-  ],
-<<<<<<< HEAD
-  "translucency": false,
-  "baseFontSizeAction": false
-=======
-  "translucency": false
->>>>>>> origin/main
+  ]
 }

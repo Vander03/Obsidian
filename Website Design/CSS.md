@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
 
-
->>>>>>> origin/main
 ## CSS Class Selectors
 Class selectors select the class attribute of an element. The selector is prefixed with a . (dot). One or more elements can be selected.
 

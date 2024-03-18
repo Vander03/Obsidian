@@ -1,9 +1,5 @@
 ## Threads
-<<<<<<< HEAD
 - Process creation is heavy weight where threads are light weight
-=======
-- Process creation is light weight where threads are light weight
->>>>>>> origin/main
 - Benefits of threads
 	- Responsiveness
 		- Threads allow further execution if some parts of the process are blocked
@@ -21,11 +17,7 @@
 		- Balance
 			- When giving tasks to different threads we need to balance the load to ensure that one thread isn't being slowed down
 		- Data splitting
-<<<<<<< HEAD
-			- Dividing up the data we want to use in the multiprocessing activity. Data compression introduce significant challenges relating to multithreading as threads rely on sequential data to access said data. Common practice to split a file up into subfiles and compress individually.
-=======
 			- Diving up the data we want to use in the multiprocessing activity. Data compression introduce significant challenges relating to multithreading as threads rely on sequential data to access said data. Common practice to split a file up into subfiles and compress individually.
->>>>>>> origin/main
 		- Data dependency
 			- Dependent data that relies on data in other threads make multicore programming much harder
 		- Testing and debugging
@@ -62,11 +54,7 @@
 		- ![250](Pasted%20image%2020230817142647.png)
 		- Many user-level threads mapped to a single kernel thread
 		- One thread blocking causes all to block
-<<<<<<< HEAD
 		- Multiple threads many not run in parallel on multicore system because only one may be in kernel at a time
-=======
-		- Multiple threads many not run in parallel on multicore system because only one mya be in kernel at a time
->>>>>>> origin/main
 		- Not popular and only very few systems use this model
 		- Doesn't require OS/library support
 		- Examples

@@ -195,11 +195,7 @@ P2:
 
 ### Deadlock and Starvation
 #### Deadlock
-<<<<<<< HEAD
 - **Deadlock** - two or more processes are waiting indefinitely for an event that can be caused by only one of the waiting processes
-=======
-- **Deadlock** - two or more processes are waiting indefinitely for an even that can be caused by only one of the waiting processes
->>>>>>> origin/main
 - Let S and Q be two semaphores initialized to 1
 
 | $P_0$ | $P_1$ |
@@ -221,11 +217,10 @@ Starvation, or **indefinite blocking**, refers to a process that may never be re
 	- Semaphore `full` initialised to value 0
 	- Semaphore `empty` initialised to the value n
 	
-| Producer | Consumer |
-	  | --- | --- |
-	  | ![bbufferProducer](bbufferProducer.md) | ![bbufferConsumer](bbufferConsumer.md) |
-	   
-	  
+|     | Producer                               | Consumer                               |
+| --- | -------------------------------------- | -------------------------------------- |
+|     | ![bbufferProducer](bbufferProducer.md) | ![bbufferConsumer](bbufferConsumer.md) |
+
 	  
 - **Readers and Writers Problem**
 	- A data set is shared among a number of concurrent processes

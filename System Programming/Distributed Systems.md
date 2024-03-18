@@ -140,11 +140,7 @@ Sockets are defined by their domain, type and transport protocol
 
 ## BSD Socket APIs
 
-<<<<<<< HEAD
 **Connection based socket - TCP**
-=======
-**Connection based socket**
->>>>>>> origin/main
 -  `socket`: creates a socket of a given domain, type, protocol **client/server**
 -  `bind`: assigns a name to the socket **server**
 -  `listen`: specifies the number of pending connections that can be queued for a server socket **server**
@@ -156,11 +152,7 @@ Sockets are defined by their domain, type and transport protocol
 -  `close`: close a socket and terminate a TCP connection **client/server**
 ![400](Pasted%20image%2020230912184817.png)
 
-<<<<<<< HEAD
 **Connectionless Socket - UDP** - is symmetrical
-=======
-**Connectionless Socket** - is symmetrical
->>>>>>> origin/main
 - `socket` 
 - `bind`
 - `sendto`

@@ -1,5 +1,5 @@
 #cs
-Network architecture is the design of a computer [[Networks|Network]]. It is a framework for the specification of a network's physical components and their functional organisation and configuration, its operational principles and procedures, as well as [[Network Communication|Communication Protocols]] used.
+Network architecture is the design of a computer [[Networks|Network]]. It is a framework for the specification of a network's physical components and their functional organisation and configuration, its operational principles and procedures, as well as [[My Second Brain/Network Communication|Communication Protocols]] used.
 
 There are two reference models:
 - [[Internet Protocol Suite|TCP/IP]] protocol suite
