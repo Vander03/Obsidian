@@ -102,7 +102,3 @@
 |[\<wbr>](https://www.dofactory.com/html/wbr)|Adds a suggestion to the browser for a word-break location|Try it live|
 |[\<!DOCTYPE>](https://www.dofactory.com/html/doctype)|Specifies the HTML version on the first line of the page|Try it live|
 |[\<!--...-->](https://www.dofactory.com/html/comment)|Marks text as comments in the source code. Not visible to users|
-<<<<<<< HEAD
-=======
-			  
->>>>>>> origin/main

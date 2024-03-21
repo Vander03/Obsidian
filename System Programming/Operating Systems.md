@@ -16,11 +16,7 @@
 	- Protection - Ensure that all access to system resources are controlled
 	- Security - using user authentication, defending I/O from invalid access attempts
 ## Interface
-<<<<<<< HEAD
-![600](Pasted%20image%2020230801120525.png)
-=======
 ![](Pasted%20image%2020230801120525.png)
->>>>>>> origin/main
 - Command Line (CLI)
 	- Sometimes implemented via kernel or system program
 	- Can have multiple "flavours" named shells

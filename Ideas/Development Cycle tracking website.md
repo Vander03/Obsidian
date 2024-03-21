@@ -1,0 +1,2 @@
+- Bar that progresses as user stories are implemented
+- 

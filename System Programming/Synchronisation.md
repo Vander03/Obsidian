@@ -4,11 +4,7 @@
 Two [processes](Processes.md) race to reach a variable first, order in which they reach and execute it aren't determined, therefore creating an unsynchronised variable
 
 ## The Critical-Section Problem
-<<<<<<< HEAD
 Consider system of n processes {$P_0$, $P_1$, $P_2$, $P_{n-1}$}
-=======
-Consider system of n processes {$P_0$, $P_1$, $P_2$, $P_(n-1)$}
->>>>>>> origin/main
 
 Each process has **critical section** segment of code
 - Process may be changing common variables, updating table, writing files

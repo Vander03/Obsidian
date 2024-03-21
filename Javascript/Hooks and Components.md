@@ -4,9 +4,52 @@
 - Component updates are based on application state
 - Rendering is costly so we only want it to happen when it needs to happen
 
+## Component Purity
+- Component render functions in React are meant to be as closely as possibly, **functionally pure**. This means that they do not have **state** and they do not have **side effects**
+- **State** is when the function remembers something, like the amount of times it has been called or what it was called with previously. The **only** thing a pure function knows is the arguments passed to it
+- **Side effects** are where invoking the function causes something to happen. The only output a pure function has is what it returns 
 
 ## Hook
 Hooks are functions that let you hook into React state and lifecycle features from function components. **Hooks** don't work inside classes, they let you use React without classes. 
+They are also the means by which a component can get around purity requirements. As such, their use is carefully controlled and there are rules that need to be followed: [here](https://reactjs.org/docs/hooks-rules.html)
+
+This is seen in:
+- `useState()` - provides a safe exception to the 'no state' requirement
+- `useContext()` - provides a way of getting outside information other than through props
+- `useEffect()` - provides a way to get around the 'no side effects' requirement [link to documentation](https://beta.reactjs.org/reference/react/useEffect)
+	- It does break the React model and thus it needs care to use. Often it is better to extract the logic into a custom hook, which will allow you to add more optimisations later
+	- It is also used to immediately initialise state when a component is constructed
+
+### UseEffect()
+
+#### useEffect(function, dependencyList) 
+- allows the function to be executed when the component is rendered and the dependency list has changed. This allows for an updated state without waiting for user action
+- Most of the time this is what you want to use
+- Dependency list is often filled with **state variables** and/or **props**
+- If a variable is in the dependency list and the effect function does not use that variable in some way, including it will call the function more than what is necessary
+
+#### useEffect(function)
+-  If useEffect is called without a dependency list, the function will be call each time the component is rendered. **This is the most dangerous form of useEffect, should be limited to components that are not re rendered often or which are very lightweight. NEVER use to call fetch**
+
+#### useEffect(function, [])
+- If it is called with an empty dependency list it will only be rendered the first time it is called **This is the safest form, only called on component construction**
+		- Could be used to fetch data to initialise a components state, IF the same data is going to be retrieved each time
+		- If the component is linked with some object not controlled by React, it may be constructed here, in which case dont forget about cleanup function
+
+#### Cleanup
+- useEffect() can optionally return a function itself
+- If it does return one, it is used as a **cleanup** function by react. This will be called when the component is unmounted OR before the corresponding useEffect() is triggered again
+- The cleanup function is used to undo anything persistent that the original useEffect established
+- i.e. if you are using a non react controlled element to play music while your component is open, you would stop that music and clean up the element in the cleanup function
+- Also used to close connections
+
+#### StrictMode
+- StrictMode does many things in development mode to check the React apps validity
+- One of these is that when the components are constructed, they are initially mounted, then unmounted then mounted again
+	- this is to ensure that your useEffect logic is implemented correctly
+- This means that useEffect() is run twice on component construction while in development mode
+- In this case the cleanup function can be used to abort an in progress fetch() call if the component is unmounted before it can complete, which will result in fewer calls to external API while testing
+
 
 Popular hooks include: 
 - `useState()`
@@ -108,5 +151,3 @@ An update can be caused by changes to props or state. these methods are called i
 ## Unmounting
 Called when a component needs to be removed from the DOM:
 - `componentWillUnmount()`
-
-
