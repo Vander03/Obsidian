@@ -3,7 +3,7 @@
   "useMarkdownLinks": true,
   "attachmentFolderPath": "CAB202/attachments",
   "spellcheck": true,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "autoPairMarkdown": true,
   "alwaysUpdateLinks": true,
   "autoConvertHtml": false
