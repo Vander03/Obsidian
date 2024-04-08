@@ -13,6 +13,7 @@ Bits can only have 2 states, 0 and 1
  There will always be $2^n$ possible bit strings of length $n$
 
 ## Operators
+![400](Pasted%20image%2020240403211805.png)
 Operators relate mathematical objects to one another ( + - etc)
 + + and - are binary operators
 + - can be binary to subtract or unary to negate (-2)
@@ -68,6 +69,9 @@ How it works
 Add bytes together to add characters together, add 0 at the front fir 8 bits
 
 *how does it end* - Pascal  based systems stores the length, C works with null termination
+
+## C strings
+works with 8 bit strings so add a leading 0 to 7 bit representations, also ends in a null bit terminator
 
 # Numbers
 

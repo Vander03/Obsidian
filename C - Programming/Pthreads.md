@@ -27,13 +27,9 @@ Common to use an array and have a pointer to each element of array for threads t
 
 	int main() {
 		pthread_t t;
-<<<<<<< HEAD
 		pthread_create(&t, NULL, start, NULL) // L->R: thread pointer, attributes, start routine, start routine args
 																				
-=======
-		pthread_create(&t, NULL, start, NULL) // L->R: thread pointer, attributes, 
 																				start routine, start routine args
->>>>>>> origin/main
 		void *output;
 		pthread_join(t, &output); // Second is pointer to pointer, so youre passing the value from the void pointer funtion return to pointer
 									// output. Waits for termination of thread

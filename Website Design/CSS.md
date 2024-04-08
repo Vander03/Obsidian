@@ -57,47 +57,47 @@ Pseudo-class selectors select elements by psuedo-class. It is commonly combined 
 
 Some pseudo class selectors:
 
-| SELECTOR | EXAMPLE | SELECTS |
-|---|---|---|
-| :active | a:active | All active links |
-| :visited | a:visited | All visited links | 
-| :link | a:link | All unvisited links | 
-| ::after | ul::after | Add cosmetic content after each | element | 
-| ::before | ul::before | Add cosmetic content before each | element |  
-| :checked | input:checked | All elements that are checked |  
-| :default | input:default | All elements that are specified as default |  
-| :enabled | input:enabled | All elements that are enabled |  
-| :disabled | input:disabled | All elements that are disabled |  
-| :valid | input:valid | All input elements with a valid value |  
-| :invalid | input:invalid | All elements with an invalid value |  
-| :in-range | input:in-range | All elements with a value that is within a specified range |  
-| :out-of-range | input:out-of-range | All elements with a value outside the specified range |  
-| :indeterminate | input:indeterminate | All elements that are in an indeterminate state |  
-| :required | input:required | All elements with a "required" attribute |  
-| :optional | input:optional | All elements with no "required" attribute |  
-| :read-only | input:read-only | All elements with a "readonly" attribute |  
-| :read-write | input:read-write | All elements WITHOUT a "readonly" attribute |  
-| ::placeholder | input::placeholder | All elements with placeholder text |  
-| :hover | input:hover | The element that currently being hovered |  
-| :focus | input:focus | The element that currently has focus |  
-| :empty | ol:empty | All element without child elements |  
-| :first-child | li:first-child | All elements that are the first child of their parent |  
-| :last-child | li:last-child | All elements that are the last child of their parent |  
-| :nth-child(n) | li:nth-child(2) | All elements that are second child of their parent |  
-| :nth-last-child(n) | li:nth-last-child(2) | All elements that are second to last child of their parent |  
-| :only-child | li:only-child | All elements that are the only child of its parent |  
-| :first-of-type | label:first-of-type | All elements that are the first label of their parent |  
-| :last-of-type | label:last-of-type | All elements that are the last label of their parent |  
-| :nth-of-type(n) | label:nth-of-type(2) | All elements that are the second label of their parent |  
-| :nth-last-of-type(n) | label:nth-last-of-type(2) | All elements that are the second to last label of their parent |  
-| :only-of-type | label:only-of-type | All elements that are the only label element of their parent |  
-| ::first-letter | p::first-letter | The first letter of every element |  
-| ::first-line | p::first-line | The first line of every element |  
-| :lang(language) | p:lang(fr) | All French elements |  
-| :not(selector) | :not(table) | All elements that are not a element |  
-| :root | :root | The document's root element | 
-| ::selection | ::selection | Parts of an element that is selected (highlighted) by the user -- usually text |  
-| :target | :target | The element that matches the url fragment, <br> e.g. element with id="list" when the url is www.mysite.com#list. |  
+| SELECTOR             | EXAMPLE                   | SELECTS                                                                                                          |
+| -------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| :active              | a:active                  | All active links                                                                                                 |
+| :visited             | a:visited                 | All visited links                                                                                                |
+| :link                | a:link                    | All unvisited links                                                                                              |
+| ::after              | ul::after                 | Add cosmetic content after each                                                                                  |
+| ::before             | ul::before                | Add cosmetic content before each                                                                                 |
+| :checked             | input:checked             | All elements that are checked                                                                                    |
+| :default             | input:default             | All elements that are specified as default                                                                       |
+| :enabled             | input:enabled             | All elements that are enabled                                                                                    |
+| :disabled            | input:disabled            | All elements that are disabled                                                                                   |
+| :valid               | input:valid               | All input elements with a valid value                                                                            |
+| :invalid             | input:invalid             | All elements with an invalid value                                                                               |
+| :in-range            | input:in-range            | All elements with a value that is within a specified range                                                       |
+| :out-of-range        | input:out-of-range        | All elements with a value outside the specified range                                                            |
+| :indeterminate       | input:indeterminate       | All elements that are in an indeterminate state                                                                  |
+| :required            | input:required            | All elements with a "required" attribute                                                                         |
+| :optional            | input:optional            | All elements with no "required" attribute                                                                        |
+| :read-only           | input:read-only           | All elements with a "readonly" attribute                                                                         |
+| :read-write          | input:read-write          | All elements WITHOUT a "readonly" attribute                                                                      |
+| ::placeholder        | input::placeholder        | All elements with placeholder text                                                                               |
+| :hover               | input:hover               | The element that currently being hovered                                                                         |
+| :focus               | input:focus               | The element that currently has focus                                                                             |
+| :empty               | ol:empty                  | All element without child elements                                                                               |
+| :first-child         | li:first-child            | All elements that are the first child of their parent                                                            |
+| :last-child          | li:last-child             | All elements that are the last child of their parent                                                             |
+| :nth-child(n)        | li:nth-child(2)           | All elements that are second child of their parent                                                               |
+| :nth-last-child(n)   | li:nth-last-child(2)      | All elements that are second to last child of their parent                                                       |
+| :only-child          | li:only-child             | All elements that are the only child of its parent                                                               |
+| :first-of-type       | label:first-of-type       | All elements that are the first label of their parent                                                            |
+| :last-of-type        | label:last-of-type        | All elements that are the last label of their parent                                                             |
+| :nth-of-type(n)      | label:nth-of-type(2)      | All elements that are the second label of their parent                                                           |
+| :nth-last-of-type(n) | label:nth-last-of-type(2) | All elements that are the second to last label of their parent                                                   |
+| :only-of-type        | label:only-of-type        | All elements that are the only label element of their parent                                                     |
+| ::first-letter       | p::first-letter           | The first letter of every element                                                                                |
+| ::first-line         | p::first-line             | The first line of every element                                                                                  |
+| :lang(language)      | p:lang(fr)                | All French elements                                                                                              |
+| :not(selector)       | :not(table)               | All elements that are not a element                                                                              |
+| :root                | :root                     | The document's root element                                                                                      |
+| ::selection          | ::selection               | Parts of an element that is selected (highlighted) by the user -- usually text                                   |
+| :target              | :target                   | The element that matches the url fragment, <br> e.g. element with id="list" when the url is www.mysite.com#list. |
 
 
 # CSS Properties
