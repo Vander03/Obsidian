@@ -19,7 +19,7 @@ for (const i of a) {
 // const note: even though a list or object is a const, its members can still be changed
 ```
 
-## Manipulating arrays
+## 1 Manipulating arrays
 
 ```js
 let numbers = [2, 3, 4, 5];

@@ -1,6 +1,6 @@
 
-## Theoretical Algorithm Analysis
-### Time efficiency
+## 1 Theoretical Algorithm Analysis
+### 1.1 Time efficiency
 1. Decide on on the parameters characterising the size of input
 2. Identify algorithms basic operation
 3. Identify the case scenario if the algorithms time efficiency **depends on the input**
@@ -8,7 +8,7 @@
 5. Solve the formula using standard arithmetic rules
 	- The result is **either** an **exact efficiency equation** or identification of the algorithms **efficiency class** in big-O notation
 
-### Size of Input
+### 1.2 Size of Input
 - The input size depends on the data structures involved
 - When dealing with **compound data structures** the size is usually:
 	- The number if items in an array
@@ -18,14 +18,14 @@
 	- The two dimensions of a matrix
 	- The number of nodes and number of edges in a graph
 
-### Basic Operation
+### 1.3 Basic Operation
 - A basic operation is an operation that has the most influence on the algorithms total computation time, i.e.
 	- Key comparisons in a searching algorithm
 	- Numeric multiplications in a matrix multiplication algorithm
 	- Visits to nodes or edges in a graph traversal operation
 - A basic operation **may not be the most expensive operation** and may occur **more than once** in an algorithm
 
-#### Example of usage: Maximum and minimum values
+#### 1.3.1 Example of usage: Maximum and minimum values
 **ALGORITHM** MaxMin2(*A*\[0..n - 1], MaxValue, MinValue)
 // finds the maximum and minimum numbers un an array *A* of *n* numbers, where n $\geq$ 1
 MaxValue $\leftarrow$ *A*\[0]
@@ -80,7 +80,7 @@ $0.01n^2 \in O(n^2)$
 $3n^3 + 5n^2 + 10 \in O(n^3)$
 $2n + 100 \in O(n)$
 
-### Example: Element uniqueness
+### 1.4 Example: Element uniqueness
 **ALGORITHM** UniqueElements($A$\[0..n - 1])
 	// determines whether all the elements in an array are distinct
 	// Input:  An array $A$\[0..n - 1]
@@ -100,19 +100,19 @@ $2n + 100 \in O(n)$
 - Thus, the algorithms worst-case efficiency is:
 	- $C_{worst}(n)=\frac{(n-1)n}{2}=\frac{1}{2}n^2-\frac{1}{2}n \in O(n^2)$
 
-### Frequently Used Summation Terms
+### 1.5 Frequently Used Summation Terms
 $$\sum_{i=l}^uca_i=c\sum_{i=l}^ua_i$$
 $$\sum_{i=l}^u(a_i\pm b_i)=\sum_{i=l}^ua_i\pm \sum_{i=l}^ub_i$$
 $$\sum_{i=l}^u1=i-l+1, l\leq u$$
 $$\sum_{i=l}^ni=\frac{n(n+1)}{2} \approx \frac{1}{2}n^2$$
 $$\sum_{i=l}^ni^k \approx \frac{1}{k+1}n^{k+1}$$
 
-## Empirical Algorithm Analysis
+## 2 Empirical Algorithm Analysis
 After confirming the acceptability of an algorithms efficiency theoretically, we may still want to analyse its behaviour experimentally in its intended computing environment
 - The actual program may not perform as well as predicted due to memory management overheads, preemption by concurrent processes, etc
 - On rare occasions the program may perform better than expected thanks to compiler optimisations e.g. hoisting code out of loops
 
-### Procedure for empirical analysis
+### 2.1 Procedure for empirical analysis
 1. Understand the experiments purpose
 2. Decide on the efficiency metric to be measured and the measurement unit (operation count vs a time unit)
 3. Decide on characteristics of the input sample (its range, size and so on)
@@ -121,7 +121,7 @@ After confirming the acceptability of an algorithms efficiency theoretically, we
 6. Run the algorithm(s) on the sample inputs and record the data observed
 7. Analyse the data obtained
 
-### 1. Understand the experiments purpose
+### 2.2 Understand the experiments purpose
 - Different goals to purse when analysing algorithms empirically:
 	- **To check the accuracy** of a theoretical assertion about the algorithms efficiency
 	- **To compare the efficiency** of several algorithms solving the same problem
@@ -130,16 +130,16 @@ After confirming the acceptability of an algorithms efficiency theoretically, we
 	- **To ascertain the efficiency** of the program implementing the algorithm on a particular machine
 - An experiments design depends on the experiments purpose
 
-### 2. Decide on the efficiency metric to be measured
+### 2.3 Decide on the efficiency metric to be measured
 - Two common efficiency metrics:
 	- The number of times the algorithms basic operation is executed [discussed previously]
 	- The execution time of the algorithms implementation [empirical analysis]
 
-### 3. Decide on characteristics
+### 2.4 Decide on characteristics
 - Determine the problem size parameters
 - Identify a basic operation and all instances of the basic operation
 
-### 4.  Prepare a program implementing the algorithm
+### 2.5 Prepare a program implementing the algorithm
 - Choose a programming language and use it to implement the algorithm
 - Test the program to make sure the behaviours of the algorithm are not changed
 - The program for counting the number of times the basic operation is performed and the program for testing the execution time of the program should be separated [aka don't put the counter in the same function as the timer is timing]
@@ -158,17 +158,17 @@ After confirming the acceptability of an algorithms efficiency theoretically, we
 	- **Important note:** the running time may fail to register at all and be reported as 0
 		- Solution is to run the program in a loop and measure the total running time, and then divide by the number of the loops repetitions
 
-### 5. Generate a sample of inputs
+### 2.6 Generate a sample of inputs
 - Whether you decide to measure the efficiency by **basic operation counting** or by **time clocking**, you will need to decide on a sample of inputs for the experiment.
 - If there are benchmarks available, use them
 - If there is no benchmark, then we have to make decisions about the range of input sizes, the sizes of sample inputs, number of times each case needs to be repeated
 - May need to develop a program to randomly generate a sample of inputs
 
-### 6. Run the algorithm(s) on the sample inputs and record the data
+### 2.7 Run the algorithm(s) on the sample inputs and record the data
 - Run the algorithm implementation for the sample input and record the data observed
 - Calculate the average number of times and/or the average execution time for each input size, if we need to run multiple times for the input size
 
-### 7. Analyse the data observed
+### 2.8 Analyse the data observed
 - In order to analyse the data, it needs to be presented
 	- Data can be presented numerically in a table or graphically in a scatterplot
 	- It is a good idea to present the data observed in both the methods as each has strengths and weaknesses:

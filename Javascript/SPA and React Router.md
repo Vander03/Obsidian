@@ -1,14 +1,14 @@
 Not everything needs to come all the way from the server
 
 
-## The Single Page App
+## 1 The Single Page App
 - Browsers are essentially operating systems now
 - So we load skeleton html and CSS and masses of JavaScript, then we render the page as needed
 - Most of the work takes place on the client 
 	- URL's intercepted and handled by the application router
 	- Then render each individual component
 
-## SPA trade-offs
+## 2 SPA trade-offs
 - Advantages:
 	- Major speed benefit, most resources re loaded initially (HTML, CSS and JS). Once loaded the application is usually very responsive to user and navigation - can support rich UI interactions and shared state between screens
 	- Can be set up to work offline as the resources can be cached
@@ -20,7 +20,7 @@ Not everything needs to come all the way from the server
 	- Initial load can be slow as the browser has to fetch resources for the whole application
 
 
-## Routing in React
+## 3 Routing in React
 This is **client side routing**, the REST API on the server is entirely different
 
 Single page apps disrupt the normal conventions
@@ -33,7 +33,7 @@ In general, we should have:
 - The back and forward buttons working normally
 - Direct link access to a view - deep linking should work
 
-### React Router
+### 3.1 React Router
 - Is a popular routing library that runs anywhere React runs (web, server or mobile)
 - use `BrowserRouter` for the web
 - Then we introduce a number of `links`
@@ -45,7 +45,7 @@ In general, we should have:
 		- Including default error conditions
 
 
-## Utility Hooks
+## 4 Utility Hooks
 - React Router also provides several utility hooks
 	- `useParams` - access path parameters ("/country/australia")
 	- `useSearchParams` - access query string parameters ("shoes?colour=black")

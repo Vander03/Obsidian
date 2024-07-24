@@ -3,20 +3,20 @@ Introducing tree data structures and algorithms
 - Binary search tree and algorithms
 
 
-## Definition
+## 1 Definition
 A **binary tree** is a non-linear data structure in which each node has at most two children. A binary tree is either empty, or partitioned into *three disjoint subsets*:
 - A **single node** *root*, which serves as the top of the tree
 - Two possibly empty sets that are binary trees, called *left* and *right* subtrees of *root*
 
-### Binary Tree Node
+### 1.1 Binary Tree Node
 Each node consists of 3 fields:
 
 | item | Lchild | Rchild |
 | ---- | ------ | ------ |
 Where **Lchild** is the left child pointer and **Rchild** is the right child pointer. IF there is no left or right child, their respective fields are set to **null**.
 
-### Traversal of Binary Tree
-There are 3 common orders in which **nodes** can be visited:
+### 1.2 Traversal of Binary Tree
+There are 3 common orders in which **nodes** can be visited. Each way of traversal has a different use, for eg deleting elements or searching
 
 **Pre-order**
  ![150](Pasted%20image%2020240330204150.png)
@@ -54,14 +54,14 @@ ALGORITHM Post-order(root)
 		visit root.item
 ```
 
-## Efficiency
+## 2 Efficiency
 Pre-order, In-order and Post-order is all defined as efficiency O(n), where n is the number of nodes in the binary tree
 
-## Binary Search Tree
+## 3 Binary Search Tree
 A binary search tree is a binary tree, where every node’s left subtree contains values that are less than or equal to the node’s value, every node’s right subtree contains values that are greater than or equal to the node’s value, and both left and right binary trees and binary search trees.
 ![400](Pasted%20image%2020240330210346.png)
 
-### Searching a Binary Search Tree
+### 3.1 Searching a Binary Search Tree
 ![300](Pasted%20image%2020240330210644.png)![300](Pasted%20image%2020240330210718.png)
 Searching for an item in the BST is a recursive process due to the properties of BST's. 
 The process begins by examining the **root**:
@@ -83,7 +83,7 @@ ALGORITHM Search (K, root)
 		return false
 ```
 
-### Inserting an Item into a Binary Search Tree
+### 3.2 Inserting an Item into a Binary Search Tree
 ![300](Pasted%20image%2020240330211011.png)
 
 ```
@@ -101,7 +101,7 @@ ALGORITHM Insert(K, root)
 			else Insert(K, root.rchild)
 ```
 
-### Deleting an Item from Binary Search Tree
+### 3.3 Deleting an Item from Binary Search Tree
 There are 3 cases that need to be considered:
 - the node to be deleted is a leaf (has no children, is the end of the branch)
 - the node to be deleted only has one child

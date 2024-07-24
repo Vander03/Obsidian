@@ -1,8 +1,8 @@
  
-## Packet Routing
+## 1 Packet Routing
 Assign a range of IP addresses to each organisation while others are reserved for local networks and special purposes
 
-### Special Addresses: 
+### 1.1 Special Addresses: 
 Network address: 131.181.0.0
 Intranet Addresses:
 	10.0.0.0 - 0.255.255.255
@@ -10,14 +10,14 @@ Intranet Addresses:
 	192.168.0.0 - 192.168.255.255
 Local Host: 127.0.0.1
 
-## Elements of the HTTP session
+## 2 Elements of the HTTP session
 An HTTP session consists of three phases:
 1. Client establishes a TCP connection(or another appropriate connection if the transport layer is not TCP)
 2. The client sends its request and then waits for the answer
 3. The server processes the request and sends back its answer, containing a status code and the appropriate data
 **Note: with HTTP/1.1 the connection is no longer closed after 3rd phase**
 
-## A basic HTTP session
+## 3 A basic HTTP session
 - Request is initiated via TCP connection to a port on the server, default is port 80
 - Server processes request and sends response
 - Request must comply with these specifications:
@@ -26,18 +26,18 @@ An HTTP session consists of three phases:
 	- https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html
 	- **Note status messages in response header**
 
-## Requests
-### Request Structure
+## 4 Requests
+### 4.1 Request Structure
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Session#Sending_a_client_request
 - Method and Parameters: path to resource without domain name
 - The HTTP protocol used
 - Subsequent headers - usually content-type
 - Empty line above data block **important: must have this separator**
-### Request examples:
+### 4.2 Request examples:
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Session#Sending_a_client_request%23Example_requests
 [Note: the URLs with anchors are correct, but may not resolve properly from PPT. You can also just access them from the menus]
 
-## HTTP GET and POST Requests
+## 5 HTTP GET and POST Requests
 - A client makes requests via HTTP to a web server
 - A web server receives and responds to HTTP requests
 - GET
@@ -48,12 +48,12 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Session#Sending_a_client_reque
 	- posting or sending some information, pushes data and triggers response from system
 	- eg. HTML form
 	- Not idempotent
-## Uniform Resource Locators (URL)
+## 6 Uniform Resource Locators (URL)
 - Identify where it is located and how to access it
 - General format is `<scheme>:<scheme-specific-part>`
 - eg: http://www.myserver.com:80/index.html for `<scheme://<host>:<port>/<local-resource>`
 
-### Request Example from Mozilla Site
+### 6.1 Request Example from Mozilla Site
 ```
 // simple web page grab but french preferred
 GET / HTTP/1.1 // ask for HTTP version 1.1
@@ -72,25 +72,25 @@ name=<name of user here>
 ```
 
 
-## Responses
-### Response Structure
+## 7 Responses
+### 7.1 Response Structure
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Session#Structure_of_a_server_response
 - Status line, HTTP version used + status code and information
 - Additional HTTP headers:
 	- Timestamp, type, data block size 
 - Blank line above data block
 - Data block
-### Response Examples
+### 7.2 Response Examples
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Session#Examples_of_responses
 
-### List of useful headers
+### 7.3 List of useful headers
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
 
-### Common Response Codes
+### 7.4 Common Response Codes
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Response_codes
 ![](Pasted%20image%2020240313004255.png)
 
-## Dom (Document Object Model)
+## 8 Dom (Document Object Model)
 Web 1.0
 - Platform independent model of an HTML document
 - Hierarchical tree structure

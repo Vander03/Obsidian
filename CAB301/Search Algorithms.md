@@ -12,7 +12,7 @@ There are 2 classical search algorithms:
 - Binary Search algorithm
 
 
-## Sequential Search Algorithm
+## 1 Sequential Search Algorithm
 - It is a **brute force** algorithm
 	- A **brute-force** algorithm is an exhaustive problem-solving approach that systematically considers every possible solution and checks whether is satisfies the problems conditions
 	- Sequential search, also known as linear search, is performed by checking each element of the collection done one by one until the desired element is found or the entire array has been examined
@@ -20,7 +20,7 @@ There are 2 classical search algorithms:
 - ![500](Pasted%20image%2020240316225614.png)
 - ![500](Pasted%20image%2020240316225631.png)
 
-### Algorithm Pseudocode
+### 1.1 Algorithm Pseudocode
 **ALGORITHM** *SequentialSearch*($A[0..n-1], k$)
 	// Searches for a given value in a given array by sequential search
 	// Input: An array $A[0..n-1]$ and a search key $K$
@@ -32,19 +32,19 @@ $i \leftarrow 0$
 **if** $i < n$ **return** $i$
 **else** **return** -1
 
-### Efficiency of the sequential search algorithm
+### 1.2 Efficiency of the sequential search algorithm
 - Choosing comparison $A[i] \neq K$ as the basic operation in this case
 	- Assume that this comparison is not performed if the first conjunct $i < n$ is false
 - The worst case is when key $K$ does not appear in array $A$ at all, or is the last time in the array, which means the algorithm needs to inspect all items:
   $C_{worst}(n) = n \in O(n)$
 
 
-## Binary Search Algorithm
+## 2 Binary Search Algorithm
 - If we know that the collection of items is sorted according to some recognised ordering criterion, we can use a **decrease-and-conquer** algorithm to improve searching efficiency
 - A **decrease-and-conquer** algorithm **decreases** a problem instance to a smaller instance of the same problem, then conquers the problem by solving the smallest instance of the problem
 - It can only be used in a sorted collection
 
-### How it works
+### 2.1 How it works
 1. Choose the midpoint of the array
 2. If the item is of interest is there the search is finished
 3. If the search key is smaller than the value at the midpoint, repeat the search on the lower half of the array
@@ -54,7 +54,7 @@ $i \leftarrow 0$
   
 ![500](Pasted%20image%2020240316233253.png)
 
-### Algorithm Pseudocode
+### 2.2 Algorithm Pseudocode
 **ALGORITHM** $BinarySearch(A[0..n-1], K)$
 	// implements non-recursive binary search
 	// Input: an array $A[0..n-1]$ sorted in ascending order and a search key $K$
@@ -68,7 +68,7 @@ $i \leftarrow 0$
 	**return** -1
 
 
-### Efficiency
+### 2.3 Efficiency
 - The worst case scenario for the binary search algorithm occurs when $K$ is not present in the sorted array
 - The basic operation is the comparison between $K$ and $A[m]$, including $K = A[m]$ and $K > A[m]$
 - The problem size is $n$

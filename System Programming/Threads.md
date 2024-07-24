@@ -1,4 +1,4 @@
-## Threads
+## 1 Threads
 - Process creation is heavy weight where threads are light weight
 - Benefits of threads
 	- Responsiveness
@@ -38,7 +38,7 @@
 	- In the perfect case (no serial) performance gains of Nx can be experienced, however most multithreaded programs have serial portions
 
 
-## User threads and Kernel Threads
+## 2 User threads and Kernel Threads
 - User threads - managed by user-level threads library
 	- POSIX
 	- Windows
@@ -103,7 +103,7 @@
 	- Doesnt need an include
 - [[Grand Central Dispatch]]
 
-## Issues with Threads
+## 3 Issues with Threads
 - Semantics of fork() and exec() and how threads interact with them
 - Signal Handling
 	- Synchronous and asynchronous

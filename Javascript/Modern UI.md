@@ -1,30 +1,30 @@
 
-## Common ideas
+## 1 Common ideas
 - Isolate application logic from presentation
 - Limit the role of the ROM on ordinary processing
 - Employ a virtual DOM for *much* master updates
 	- Only in React and Angular
 - Decouple the client and server components
 - Declarative templating on the client side
-## Differences
-### Frameworks
+## 2 Differences
+### 2.1 Frameworks
 - A framework imposes an application structure
 - Has strong opinions about data flows
 - Offers a coherent suite of services
 - Manages the upgrade path and integration for you
 - Angular is a framework
 
-### Libraries
+### 2.2 Libraries
 - A subset of the functionality needed for a full application
 - Need to play nicely with other services
 - Need to manage interactions with other services yourself
 - React tis a templating library
 - Vue can be a view library or a full framework
 
-## Model-View-Controller
+## 3 Model-View-Controller
 ![300](Pasted%20image%2020240308191138.png)
 
-### Data Binding
+### 3.1 Data Binding
 - One way binding
 	- Changes to the model reflected in the view
 	- But changes in the view do not propagate to the model
@@ -34,19 +34,19 @@
 	- Changes in the view do propagate to the model
 	- This is the approach taken by Angular and supported in Vue
 
-## Vue
+## 4 Vue
 Fast virtual Dom.
 Relies on its virtual Dom to propagate updates to the real Dom whenever necessary
 
 
-## Angular
+## 5 Angular
 Based around **components**, which define a **view**. **Views** are a set of screen elements that Angular can choose among and modify according to your program logic and data.
 **Components** use services, which provide specific functionality not directly related to **views**. Service providers can be *injected* into component *dependencies* making code modular, reusable and efficient.
 
 **Angular** provides its own module specification for organising the application
 
 
-## React
+## 6 React
  - JS library for views
  - Developed by Facebook
  - Templating library like Pug
@@ -55,7 +55,7 @@ Based around **components**, which define a **view**. **Views** are a set of scr
  - Does not have a standard routing library
  - Not a full MVC framework like Angular
 
-### JSX
+### 6.1 JSX
 Javascript Extension templating
 
 ```jsx
@@ -77,11 +77,11 @@ ReactDOM.render( // embedded within a call to the ReactDOM.render
 );
 ```
 
-### Anchor on page
+### 6.2 Anchor on page
 **React** attaches to a point on the webpage by connecting with an HTML class (normally designated "root"), by assigning `const rootElement = document.getElementById("root)`;
 and placing this in the `ReactDOM.render()` function shown above, normally present in `index.js`. 
 
-### Index
+### 6.3 Index
 `ReactDOM` will update changes as they're needed 
 
 ```jsx
@@ -99,7 +99,7 @@ ReactDOM.render (
 );
 ```
 
-### App 
+### 6.4 App 
 `App.js` is where the application code is kept
 
 ```jsx
@@ -124,7 +124,7 @@ export default function App() { // makes this function available in the other fi
 ```
 
 
-## Rendering and Updates
+## 7 Rendering and Updates
 
 ```jsx
 function tick() {
@@ -139,7 +139,7 @@ ReactDOM.render(element, document.getElementById('root'));
 setInterval(tick, 1000);
 ```
 
-## Props
+## 8 Props
 Props are passed to the component as a single object
 Access each field as a property, with unused fields being ignored
 ```jsx

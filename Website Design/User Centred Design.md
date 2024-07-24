@@ -11,7 +11,7 @@ User
 
 ![800](Pasted%20image%2020230820002629.png)
 
-## [Waterfall Model]
+## 1 [Waterfall Model]
 - Requirements
 	- Requirements of Document 
 - Design

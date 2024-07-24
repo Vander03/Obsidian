@@ -1,4 +1,4 @@
-## Application State
+## 1 Application State
 - Complex application involve numerous components
 - Components share state with child components
 	- But not with siblings or parents
@@ -15,12 +15,12 @@ In application state, we always want to use the simplest approach that works
 - Maybe your application is so complex and nested that you would need to pass props through many components, **called prop-drilling**. For this use case, `useContext` is your friend
 
 
-## Component hierarchies
+## 2 Component hierarchies
 - Ideas similar to OOP
 - Abstract away common state from child components
 - Hold this state somewhere up the component tree to be easily accessible to children
 - We pass the state information down via props
-## Context
+## 3 Context
 Context is an API that allows passing of state across the app, no more need for component drilling
 https://beta.reactjs.org/reference/react/useContext
 https://beta.reactjs.org/learn/passing-data-deeply-with-context
@@ -30,7 +30,7 @@ It is based on a model with a context **provider** and **consumer**
 - Make this state available through the context
 - And the consumers can access it at will
 
-### Steps
+### 3.1 Steps
 - import using `import {createContext, useContext} from "react"`
 - Construct  a **context** with `createContext`. This is done at the top level (not in a component)
 - In our component hierarchy, we create a **provider** for that context and give it a value through its `value` property

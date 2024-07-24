@@ -1,4 +1,4 @@
-## Simple function based component
+## 1 Simple function based component
 
 ```JSX
 function Name(props) {
@@ -8,7 +8,7 @@ function Name(props) {
 }
 ```
 
-## Function based approach
+## 2 Function based approach
 ```JSX
 import React from "react";
 import ReactDOM from "react-dom";
@@ -28,7 +28,7 @@ const rootElement = document.getElementByID("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-## Class based approach
+## 3 Class based approach
 ```JSX
 import React from "react";
 import ReactDOM from "react-dom";
@@ -49,9 +49,9 @@ const rootElement = document.getElementByID("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-## Example: Website in Class based and Function based
+## 4 Example: Website in Class based and Function based
 
-### Function based
+### 4.1 Function based
 ```JSX
 // Function based
 import "./styles.css"
@@ -87,7 +87,7 @@ const rootElement = document.getElementByID("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-### Class based
+### 4.2 Class based
 ```JSX
 
 // Main App class

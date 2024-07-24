@@ -1,13 +1,13 @@
-## Proofs
+## 1 Proofs
 ---
-### Logical Implication
+### 1.1 Logical Implication
 From one true proposition we can derive other true propositions. This is called **logical implication**.
 - From $A \land B$ we can conclude A
 - From $(A \rightarrow B) \land A$ we can conclude B
 If from A we can conclude B, then we write $A \vDash B$, which is equivalent to saying that $A \rightarrow B$ is a[[Propositional Logic###Classifying formulas | tautology]] (always true)
 **We can only substitute if we know that the left hand side of the implication is TRUE**
 
-##### Examples
+##### 1.1.1.1 Examples
 $$\begin{align}
 &A \land B \vDash A \\
 &A \vDash A \lor B \\
@@ -17,14 +17,14 @@ $$\begin{align}
 \end{align}
 $$
 
-#### Finding Logical Implications
+#### 1.1.2 Finding Logical Implications
 We can find logical implications in two ways:
 - Using a truth table
 - Using a proof
 To show $P \vDash Q$ using a truth table, we check that in every line where $P = T$, we also have $Q = T$
 ![400](Pasted%20image%2020240327092651.png)
 
-#### Using Logical Implications
+#### 1.1.3 Using Logical Implications
 Unlike logical equivalence, it is not always safe to make substitutions with logical implications.
 - **Safe:** substituting an entire formula which is known to be true e.g. We have $A \land B \vDash A$ so if $A \land B$ *by itself* is true, it can be replaced with A
 	- **Special note:** For $A \land B$ to be true, both A and B need to be true, so in the case that $A \land B$ is false, A is true due to the nature of IF...THEN, and if $A \land B$ is true, then A is true by the nature of AND, thus this is a **tautology**
@@ -33,15 +33,15 @@ Unlike logical equivalence, it is not always safe to make substitutions with log
 	- **Special note:** We cannot make this assumption because we do not know which if the arguments is false 
 	- From **NOT(Socrates is human and a teapot)** we *cannot* conclude that **Socrates is not human**
 
-### Logical equivalence vs Logical implication
-##### Logical Equivalence
+### 1.2 Logical equivalence vs Logical implication
+##### 1.2.1.1 Logical Equivalence
 $P \equiv Q$ 
 - P and Q always have the same truth value
 - Can make substitutions
 - How to identify: All rows in truth table are the same
 - $P \leftrightarrow Q$ is a tautology
 
-##### Logical Implication
+##### 1.2.1.2 Logical Implication
 $P \vDash Q$
 - Q is true whenever P is true
 - Can only safely make substitutions when P is true
@@ -49,7 +49,7 @@ $P \vDash Q$
 - $P \rightarrow Q$ is a tautology
 
 ---
-### Proofs
+### 1.3 Proofs
 Using equivalences and logical implications to derive new true propositions from a given true proposition. **E.g.**
 - Socrates is mortal or Socrates is not human
 - Socrates is human
@@ -71,7 +71,7 @@ $$\begin{align}
 \end{align}
 $$
 
-##### Further Example
+##### 1.3.1.1 Further Example
 Prove $(A \rightarrow B) \land \neg B \vDash \neg A$
 
 $$\begin{align}
@@ -84,7 +84,7 @@ $$\begin{align}
 \end{align}
 $$
 
-##### Longer Proof
+##### 1.3.1.2 Longer Proof
 Prove $(A \rightarrow B) \land (B \rightarrow C) \vDash (A \rightarrow C)$
 break premises into 2
 Firstly. replace implies with OR's
@@ -105,7 +105,7 @@ $$ \begin{align}
 \end{align}
 $$
 
-#### Proof rules
+#### 1.3.2 Proof rules
 Symbolically a proof is a list of formulas which start with some premises, and every other formula on the list must be:
 - Logically **equivalent** to a formula above it
 - Logically **implied** by a formula above it
@@ -117,10 +117,10 @@ A proof produces a new logical implication $P \vDash Q$ where
 - Q is the last line of the proof
 A proof states that, **assuming all the premises are true**, the conclusion is also true. In other words, if the premises are true, then the structure of the proof guarantees that anything written after will also be true
 
-## Predicate Logic
+## 2 Predicate Logic
 
 ---
-### Parameters and predicates
+### 2.1 Parameters and predicates
 **Predicates** are the same as functions in python. We use them to talk more generally about propositions that share a common form and meaning. A **predicate** is a proposition with 2 or more variables.
 
 Parameters in predicates can stand in for anything (typically elements of a universe set). On contrast, variables in formulas stand for propositions which must evaluate to true or false
@@ -131,7 +131,7 @@ Just like propositions, we can form complex predicates out of smaller predicates
 - $A(x) \rightarrow B(x)$
 - $(A(x) \rightarrow B(y)) \land A(x)$
 
-##### Truth Values of Predicates
+##### 2.1.1.1 Truth Values of Predicates
 Before we can evaluate the truth of a predicate, we need to fill in the parameters with actual values:
 - Suppose A(x) is $x^2=1$, then A(1) is True, but A(2) is False
 - Suppose A(x) is a x is a flower $\rightarrow$ x smells nice. Then A(rose) is true, but A(raffelesia) is False
@@ -139,7 +139,7 @@ Before we can evaluate the truth of a predicate, we need to fill in the paramete
 **Important:** we cannot assume the truth values even if the statement looks fullproof, the parameters must be filled in.
 
 ---
-### Quantifiers
+### 2.2 Quantifiers
 **Quantifiers** are symbols that allow us to talk about parameters in predicates. There are two kinds:
 - Existential Quantification (there exists) - $\exists$ 
 	- e.g. $\exists x \in \mathbb{Z} \space (x^2 = 4)$ - **There exists an x from $\mathbb{Z}$ such that $x^2=4$**
@@ -151,7 +151,7 @@ Before we can evaluate the truth of a predicate, we need to fill in the paramete
 	- $\forall x \in S \space p(x)$ means **For all x from S, p(x) is true**
 They allow us to form propositions out of predicates without filling in any specific value
 
-##### Quantifying over sets
+##### 2.2.1.1 Quantifying over sets
 When using a quantifier, we have 2 options:
 - **Specify** a set explicitly as in:
 	- $\forall x \in S \space p(x)$
@@ -162,12 +162,12 @@ When using a quantifier, we have 2 options:
 
 It is good practice to specify a set to quantify over unless the universe is well understood from context. Without context the result of the predicate is unclear. For this reason predicates that do not specify a set should be viewed suspiciously
 
-##### Parameters in Predicates
+##### 2.2.1.2 Parameters in Predicates
 Consider $\exists x \space p(x)$ 
 - The $x$ is filled by the $\exists x$
 - A truth value can now be assigned. Either there exists an $x$ that makes $p(x)$ true, then $\exists x \space p(x)$ is true, or there does not, then $\exists x \space p(x)$ is false
 
-##### Free Parameters
+##### 2.2.1.3 Free Parameters
 Consider $A(y) = \exists x \space p(x,y)$ 
 - Parameter $x$ is quantified over, cannot be filled in
 - Parameter $y$ is *not* quantified over, it can be filled in
@@ -175,11 +175,11 @@ Consider $A(y) = \exists x \space p(x,y)$
 - Here, $y$ is called the **free parameter**
 - If there is *no* **free parameters**, then the predicate is fully quantified
 
-##### Truth Value of Fully Quantified Predicates
+##### 2.2.1.4 Truth Value of Fully Quantified Predicates
 If were quantifying over a finite set, we can check all value to determine if a fully quantified predicate is true. e.g.
 $$\forall x \in \{0,1\} \space (x^2 = x) \space \space \text{is true because } 1^2 = 1, \space 0^2 = 0$$
 
-##### Truth Value with Existential Quantifiers
+##### 2.2.1.5 Truth Value with Existential Quantifiers
 For existential quantifiers we just need to find *one* value to work to show that it is true
 $$\exists x \in \{0,1\} \space (x^2 = 1) \space \space \text{is true because } 1^2 = 1$$
 **But** to show that it is false, we need to check every value:
@@ -192,13 +192,13 @@ However, due to the requirements to prove the statement is false we need to chec
 $$ \exists x \in \mathbb{Z}(x^2 = -1) \space \text{is false because of every } x \in \mathbb{Z}, \space x^2 \geq 0, \text{and hence } x^2 \neq -1$$
 This is the same for **universal quantification**
 
-##### Truth Value with Universal Quantifiers
+##### 2.2.1.6 Truth Value with Universal Quantifiers
 For universal quantifiers we need to check every value to show something is true:
 $$\forall x \in \{0,1\}(x^2 = x) \space \text{is true because } 0^2 = 0, \space 1^2 = 1$$
 **But** to show that it is false, we only need one value:
 $$\forall x \in \{0,1\}(x^2 = 1) \space \text{is false because } 0^2 \neq 1$$
 
-#### Multiple Quantifications
+#### 2.2.2 Multiple Quantifications
 It is possible to have multiple quantifiers in a predicate, its also possible to mix types:
 - $\exists x \in \mathbb{R}(\exists y \in \mathbb{R} \space x + y = 0)$ - is true
 - $\forall x \in \mathbb{R}(\exists y \in \mathbb{R} \space x + y = 0)$ - is true
@@ -210,22 +210,22 @@ It is possible to have multiple quantifiers in a predicate, its also possible to
 
 It is possible to quantify over different sets or the same set, and can combine any number of quantities in any order. But at most one quantifier per parameter
 
-##### Example
+##### 2.2.2.1 Example
 Fix universe as {0,1} and consider:
 $$\exists x \space \forall y (x+y = 1)$$
 Which should be understood as:
 $$\exists x (\forall y (x+y = 1))$$
-##### Order of quantifiers
+##### 2.2.2.2 Order of quantifiers
 Order matters with different types. With universe $\mathbb{Z}$:
 $$\forall y \exists x (x+y = 0)$$
 is **true**, For any $y$ we can use the value $x = -y$. For every value of y there exists an element x which will result in x + y being 0, But:
 $$\exists x \forall y (x+y = 0)$$
 is **false**. For any value $x$ we can choose $y=x+1$ so $x+y=1 \neq 0$. For an element x that exists in the universe, and for all y, $x+y = 0$, which is false
 
-##### If then with quantifiers
+##### 2.2.2.3 If then with quantifiers
 Let $h(x)$ be **x is human** and $m(x)$ **x is mortal**, then the proposition $\forall x \in \text{BEINGS}(h(x) \rightarrow m(x))$
 
-##### Necessary and Sufficient Conditions
+##### 2.2.2.4 Necessary and Sufficient Conditions
 When $\forall x \space (p(x) \rightarrow q(x))$ we can say: 
 - $p(x)$ is a *sufficient condition* for $q(x)$
 - $q(x)$ is a *necessary condition* for $p(x)$
@@ -239,7 +239,7 @@ The statement, *squareness is a sufficient condition for rectangularity*. To wri
 $$\forall x \space \text{if x is a square, then x is a rectangle}$$
 Or *informally*:
 $$\text{if a figure is a square, then it is a rectangle}$$
-##### Boolean in predicates
+##### 2.2.2.5 Boolean in predicates
 Suppose $A(x,y)$ is a Boolean formula with $x$ and $y$ some propositions. Then
 - $A$ is a tautology means $\forall x, y \space A(x,y)$
 - $A$ is a contradiction means $\forall x, y \space \neg A(x,y)$
@@ -247,11 +247,11 @@ Suppose $A(x,y)$ is a Boolean formula with $x$ and $y$ some propositions. Then
 Where the universe is **{T, F}**
 
 ---
-### Logic with Predicates 
-#### Logical Equivalence with predicates
+### 2.3 Logic with Predicates 
+#### 2.3.1 Logical Equivalence with predicates
 Predicates have equivalences
 - All equivalences for Boolean formulas still work
-- $\neg(\forall x \space p(x)) \equiv \exists x \space \neg p(x)$
+- $\neg(\forall x \space p(x)) \equiv \exists x \space \neg p(x)$ OR $\forall x \space p(x) \equiv \neg (\exists x \space \neg p(x))$
 	- **It is not the case that all humans are male** means **There exists some human which is not male**
 - $\neg(\exists x \space p(x)) \equiv \forall x \space \neg p(x)$
 	- **it is not the case that there exists a human which lays eggs** means **All humans do not lay eggs**
@@ -259,7 +259,7 @@ Predicates have equivalences
 	- **All humans are mammals and warm blooded** means **All humans are mammals and all humans are warm-blooded**
 - $\exists x \space (p(x) \lor q(x)) \equiv (\exists x \space p(x)) \lor (\exists x \space q(x))$
 
-#### Expressing problems are predicates
+#### 2.3.2 Expressing problems are predicates
 - **x is a prime** = $\neg(\exists y, z \in \mathbb{N}((yz = x) \land (y \neq 1) \land (z \neq 1)))$
 This logic can be used to give an equivalent formulation:
 - $\forall y, z \in \mathbb{N}((y=1)\lor (z=1) \lor (yz\neq x))$
@@ -269,7 +269,7 @@ Which suggests a simple algorithm
 This allows us to give explicit conditions that can be translated directly into program logic
 
 ---
-## Python and Quantifiers
+## 3 Python and Quantifiers
 ```Python
 def p(x): return x >= 0
 ...

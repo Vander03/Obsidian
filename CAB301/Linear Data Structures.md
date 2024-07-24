@@ -6,7 +6,7 @@
 	- Stack
 	- Queue
 
-## Array
+## 1 Array
 - Elementary linear data structure
 - A (one-dimensional) array is a sequence of *n* items of the same data type, that are stored contiguously in computer memory
 - An item in an array is accessible by index
@@ -14,7 +14,7 @@
 - Every element of an array can be accessed in the same constant amount of time in a computer regardless of where in the array the element in question is located
 - Arrays can be used for implementing a variety of other data structures
 
-## Linked List
+## 2 Linked List
 - A linked list is a sequence of zero or more elements called **nodes**, each containing an item and one or two links called **pointers** to other nodes of the linked list.
 - A special pointer called *null* is to indicate no link
 - In a **single** linked list, each node except for the last one contains a single pointer to the next node
@@ -27,7 +27,7 @@
 	- This includes the allocation and deallocation of memory as objects are added or removed
 - The length is determined by the number of nodes in the list
 
-## Array vs Linked List
+## 3 Array vs Linked List
 - Both array and linked list can be used to implement a more abstract data structure **list**, which is a sequence of items
 - The basic operations performed on lists are accessing, searching for, inserting and deleting an item
 	- To access the $K^{th}$ entry in an array or a linked list
@@ -45,7 +45,7 @@
 	- In an array we can search the array sequentially or use binary search if the elements in the array are sorted
 	- In a linked list we need to traverse the pointe chain to find the node where the item is sorted
 
-## Stack
+## 4 Stack
 - A **stack** is a linear data structure that stores items sequentially and allows access to the top only
 - Adding an item
 	- Referred to as **pushing** it onto the stack
@@ -58,7 +58,7 @@
 
 ![500](Pasted%20image%2020240316203659.png)
 
-### Applications of Stack
+### 4.1 Applications of Stack
 - Stacks can be used to check **parenthesis matching** in an expression
 - Stacks can be used for **expression evaluation**
 - Stacks van be used for **conversion** from one expression to another
@@ -66,7 +66,7 @@
 - Stacks can be used in **backtracking algorithms**
 
 
-## Queue
+## 5 Queue
 - A queue is a linear data structure that allows certain operations on both ends
 - Can be implemented as an array or linked list
 - Middle items cannot be accessed directly
@@ -77,7 +77,7 @@
 
 ![500](Pasted%20image%2020240316211847.png)
 
-### Applications of queue
+### 5.1 Applications of queue
 - **Algorithm design**
 - **CPU scheduling**
 - **Disk scheduling**

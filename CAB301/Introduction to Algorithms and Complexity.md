@@ -1,5 +1,5 @@
 
-## Goals 
+## 1 Goals 
 
 • To present the motivation for studying algorithms and complexity
 • To learn the concepts of data structure, algorithm, efficiencies of an algorithm, and analysis of an algorithm
@@ -7,12 +7,12 @@
 • To show how an algorithm is described in pseudocode
 
 
-## What is an algorithm
+## 2 What is an algorithm
 
 • An algorithm is a step-by-step procedure or set of rules designed to perform a specific task or solve a particular problem.
 • In the context of computer science and programming, an algorithm is a finite sequence of well-defined, unambiguous instructions or operations that, when executed, accomplish a particular computational task.
 
-### Key Characteristics 
+### 2.1 Key Characteristics 
 
 **Input** - Algorithms take input from a defined set of values or variables.
 **Output** - They produce output as a solution to a problem
@@ -20,7 +20,7 @@
 **Finiteness** - Has a finite amount of steps
 **Effectiveness** - Designed to be effective for all possible inputs
 
-## Efficiency
+## 3 Efficiency
 
 Algorithm efficiency is usually represented as a mathematical function describing the resource requirements of the algorithm in terms of the amount of data the algorithm must process.
 
@@ -30,7 +30,7 @@ There are **two** main efficiency measures for the efficiency of algorithms:
 
 We only focus on time efficiency in this unit
 
-## Analysis of algorithms
+## 4 Analysis of algorithms
 
 - Could implement as a program and see its execution time, but is too inaccurate due to cpu choice, operating system etc effecting execution times
 - **Rather** it is done in a machine and language independent way

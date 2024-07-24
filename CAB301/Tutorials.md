@@ -19,7 +19,7 @@ good to sort it then compare each number with the next one
 
 **ALGORITHM** ClosestDisctance(A\[0...n-1])
 
-## Personal Attempt
+## 1 Personal Attempt
 
 1.  a) An algorithm is a unambiguous set of instructions that details a process to solve a problem
 	**Input** - Algorithms take input from a defined set of values or variables.
@@ -134,3 +134,50 @@ c.) 30, 50, 70, 10, 40, 60
 ![400](Pasted%20image%2020240331155133.png)
 
 # Tutorial 5
+
+1.a) A B D E G C F
+b.) G E D B F C A x D G E B F C A
+c.) D B E G A F C x D B G E A F C
+
+2.) c
+
+3.a.i) 50, 55, 52
+ii.) 50, 45, 46
+iii.) 50, 55, 80, 79
+
+b.i) leaf, just gets removed
+ii.) 54 takes its place
+iii.) 52 takes its spot, 51 moves to the parent of 53 x rightmost node of left tree replaces it
+
+c.i) added as the right tree of 30
+ii.) added as the left tree to 82
+
+# Tutorial 6
+1.a)i) value, childpointer, neighbourpointer
+ii) Breadth first: T S X Z Y
+depth-first: T S X Z Y
+
+1.b) ii) Breadth: A G E B F B H D
+Depth: A G E B H D B F
+
+1.c) ii) Breath: M Z Y R T P X N L Q S
+Depth: M Z Y T P L Q S X N R
+
+2.) 
+Initially: A 
+Visit A: B F
+Visit B: F C D E
+Visit F: C D E G
+Visit C: D E G
+Visit D: E G
+Visit E: G
+Visit G: H J K
+Visit H: J K
+Visit J: K
+Visit K: empty
+
+3.) 
+Look at soln
+
+# Tutorial 7
+

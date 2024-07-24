@@ -1,4 +1,4 @@
-## Recursion
+## 1 Recursion
 When defining a type of object, sometimes it is easiest to define it in **terms of itself**. This is called **recursive definition**
 
 **Example:** the factorial function on $\mathbb{N}$ can be defined by:
@@ -19,7 +19,7 @@ There are two main parts of recursive definition:
 At least one **base case** is required, but there may be several
 Recursive definitions must always be resolved back to base cases or is not well defined
 
-### Example
+### 1.1 Example
 $$f(n) = \begin{cases}
 1&:n=1 \\
 1&:n=2 \\
@@ -36,7 +36,7 @@ def F(n):
 	else: return F(n-1) + F(n-2) # recursion
 ```
 
-### Arithmetic Expression Example
+### 1.2 Arithmetic Expression Example
 Programming languages are often expressed in terms of multiple types, in big recursive calls.
 
 For example we might define an expression like
@@ -54,41 +54,41 @@ VARIABLE \\
 \end{cases}
 $$
 
-## Propositions
+## 2 Propositions
 Propositional Logic studies:
 - Propositions, which are statements which are **true** or **false**
 - Logical connectives that build larger propositions from smaller ones
 
 Logic allows us to determine if a large proposition is true or not based on how it is constructed and the truth value of the smaller pieces
 
-### Examples of propositions
-#### Language Examples
+### 2.1 Examples of propositions
+#### 2.1.1 Language Examples
 **I like tomatoes** could be true or false
 **All humans are mortal** is true
 **This sentence is false** is neither true or false, and is thus not a proposition
 Symbols such as *p* and *q* are normally used to stand in for propositions
 
-#### Math examples
+#### 2.1.2 Math examples
 $5 \geq 7$
 $3 \equiv 7 \space (\mod 4)$
 
-#### Propositions from the world
+#### 2.1.3 Propositions from the world
 - Rain comes from peaches
 - Socrates is human
 
-#### Complex Propositions
+#### 2.1.4 Complex Propositions
 - It is sunny if and only if its raining
 - Goats eat grass and goats eat hats
 
 **If we cant assign a truth value, it is not a proposition**
 
-### Atomic and Compound propositions
+### 2.2 Atomic and Compound propositions
 **Compound propositions** are composed of two or more **atomic propositions**. **Atomic propositions** are propositions that *cannot* be broken down. Essentially is "AND" or "OR" is present it is compound.
 
 Propositional logic doesn't care about the content of an atomic proposition, only wether or not it is true or false, so we usually replace them with letters.
 In compound proposition we just care about how they are built, not the content of their atomic propositions
 However, much is concerned with how we can derive true propositions from other true proportions
-## Logical Operator
+## 3 Logical Operator
 We can build compound propositions using atomic propositions and logical operators (also called **logical connectives**). Some common operators:
 - $NOT$ symbolised by $\neg$
 	- Operates on one proposition, giving its negation. Provides the exact logical opposite
@@ -112,14 +112,14 @@ We can build compound propositions using atomic propositions and logical operato
 	- Understand as meaning *p* and *q* have the same truth value
 	- T T = T; T F = F; F T = F; F F = T
 
-## Formulas
+## 4 Formulas
 A boolean formula is a string of symbols that tells us how to build a compound proposition, they are defined by these rules:
 - T (true) and F (false) and lower case letters are all formulas
 - no other strings are formulas
 - Order of operations: 
 	- ![100](Pasted%20image%2020240317213533.png)
 
-### Classifying formulas
+### 4.1 Classifying formulas
 Three basic kinds for formulas depending on how they behave when we replace variables with truth values
 - **tautologies** are always true
 - **contradictions** are always false
@@ -128,22 +128,22 @@ Three basic kinds for formulas depending on how they behave when we replace vari
 
 ![500](Pasted%20image%2020240317215850.png)
 
-#### Tautologies
+#### 4.1.1 Tautologies
 Tautologies are satisfiable
 ![200](Pasted%20image%2020240317220039.png)
 ![400](Pasted%20image%2020240317220053.png)
 
-#### Contingent Formulas
+#### 4.1.2 Contingent Formulas
 These are also satisfiable
 ![100](Pasted%20image%2020240317221025.png)
 ![200](Pasted%20image%2020240317221045.png)
 
-#### Contradictions
+#### 4.1.3 Contradictions
 contradictions are not satisfyable
 ![200](Pasted%20image%2020240317221151.png)
 ![400](Pasted%20image%2020240317221200.png)
 
-## Logical Equivalence 
+## 5 Logical Equivalence 
 Some formulas are *logically equivalent*, meaning that they are true at the same time
 e.g. $A \rightarrow B$ is logically equivalent to $\neg A \lor B$ 
 ![300](Pasted%20image%2020240317225715.png)
@@ -151,10 +151,10 @@ e.g. $A \rightarrow B$ is logically equivalent to $\neg A \lor B$
 because the last two columns are identical, we can write $A \rightarrow B \equiv \neg A \lor B$
 Saying that $A \equiv B$ is the same as saying that $A \leftrightarrow B$ is a tautology
 
-#### Logically equivalent formula examples
+#### 5.1.1 Logically equivalent formula examples
 ![300](Pasted%20image%2020240317230227.png)
 ![300](Pasted%20image%2020240317230423.png)
-#### Example
+#### 5.1.2 Example
 ![500](Pasted%20image%2020240317231112.png)
 **Associativity is when braces can be moved** 
 
@@ -163,7 +163,7 @@ Suppose $A \equiv B$, then substituting in $B$ for $A$ in $A \lor C$ we get $A \
 Furthermore, if $A \equiv B$ and $B \equiv C$ then $A \equiv C$
 ![600](Pasted%20image%2020240317232436.png)
 
-## Logic and Computers
+## 6 Logic and Computers
 There is a natural way of modelling truth values with bits
 - 0 = F
 - 1 = T

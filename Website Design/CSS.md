@@ -1,5 +1,5 @@
 
-## CSS Class Selectors
+## 1 CSS Class Selectors
 Class selectors select the class attribute of an element. The selector is prefixed with a . (dot). One or more elements can be selected.
 
 Some example class selectors:
@@ -11,7 +11,7 @@ Some example class selectors:
 				|.class1 .class2|	\<div class="cn1"><br>  \<div class="cn2"> <br>...<br>\</div> <br>\</div>	| All elements with cn2 that are contained by an element with cn1. |
 
 
-## CSS ID Selectors
+## 2 CSS ID Selectors
 Id selectors select the id attribute of an element. The selector is prefixed with a # (hash). Only one element can be selected because id values are unique on a page.
 
 An id selector:
@@ -21,7 +21,7 @@ An id selector:
 | \#id	|\#email|	The element with id="email"|
 
 
-## Element Selectors
+## 3 Element Selectors
 Element selectors select elements by tag name, i.e. type, such as div or ul. The style applies to all elements of that type.
 
 Some element selectors:
@@ -36,7 +36,7 @@ Some element selectors:
 |element1 ~ element2	|div ~ ul	|All \<ul> elements preceded by a \<div> element.|
 
 
-## Attribute Selectors
+## 4 Attribute Selectors
 Attribute selectors select elements by attribute. The selectors are surrounded by square brackets, for example \[hidden]. The style applies to all elements with that attribute.
 
 Some attribute selectors:
@@ -52,7 +52,7 @@ Some attribute selectors:
 |\[attribute\|=value]	|\[lang\|=nl] | All elements whose lang attribute is a hyphen-separated list starting with "nl" or "nl-"|
 
 
-## Pseudo-class Selectors
+## 5 Pseudo-class Selectors
 Pseudo-class selectors select elements by psuedo-class. It is commonly combined with element selectors, such as input:enabled.
 
 Some pseudo class selectors:
