@@ -14,7 +14,7 @@ There is sometimes confusion about using `pthread` or `lpthread` as the correct 
 
 -pthread() tells the compiler to link in the pthread library as well as configure the compilation for threads, including preprocess to load some macros such as: _REENTRANT and __USE_REENTRANT. Using the -lpthread option only causes the pthread library to be linked - but the pre-defined macros don't get defined.  The result is that the -pthread option should be used.
 
-## Create function to run in seperate thread
+## 1 Create function to run in seperate thread
 Common to use an array and have a pointer to each element of array for threads to store their values in. **Dont use malloc in thread function, causes memory leak**
 
 ```c
@@ -86,7 +86,7 @@ void *runner(void *param) {
 }
 ```
 
-## Pthread guide
+## 2 Pthread guide
 1. In `main()` we declare a variable called _**`thread_id`,**_ which is of type _**`pthread_t`**_. This is basically an integer used to identify the thread in the system. After declaring `thread_id`, we call the _**`pthread_create`**_ function to create a real, living thread.
 2. _**`pthread_create()`**_ gets 4 arguments The first argument is a pointer to thread_id,  used by _**`pthread_create()`**_ to supply the program with the thread's identifier. The second argument is used to set some attributes for the new thread.  Notice that _**`PrintHello()`**_ accepts a _**void ***_ as an argument and also returns a **_void *_** as a return value. This shows us that it is possible to use a _**void ***_ to pass an arbitrary piece of data to our new thread, and that our new thread can return an arbitrary piece of data when it finishes. How do we pass our thread an arbitrary argument? Easy. We use the fourth argument to the _**`pthread_create()`**_ call. If we do not want to pass any data to the new thread, we set the fourth argument to NULL. _**`pthread_create()`**_ returns zero on success and a non-zero value on failure.
 3. After _**`pthread_create()`**_ successfully returns, the program will consist of two threads. This is because the main program is also a thread and it executes the code in the _**`main()`**_ function in parallel to the thread it creates. Think of it this way: if you write a program that does not use POSIX threads at all, the program will be single-threaded (this single thread is called the "main" thread).
@@ -126,7 +126,7 @@ void *PrintHello(void *data) {
 }
 ```
 
-## Thread Cancellation
+## 3 Thread Cancellation
 Not a good idea
 cancelled using:
 ```c
@@ -135,7 +135,7 @@ pthread_cancel(tid) // tid is the pointer to the thread, same one used as &tid t
 If the thread has cancellation turned off the cancellation will remain pending until it is re-enabled
 Default cancellation type is deferred, meaning it can only be cancelled once the thread reaches a cancellation point. Allows cleanup handler
 
-## Thread local storage (TLS)
+## 4 Thread local storage (TLS)
 Allows each thread to have their own copy of data
 Useful when we don't have control over the thread process (thread pools)
 

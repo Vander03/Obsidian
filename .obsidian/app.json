@@ -1,10 +1,13 @@
 {
   "promptDelete": false,
-  "useMarkdownLinks": true,
+  "useMarkdownLinks": false,
   "attachmentFolderPath": "CAB202/attachments",
   "spellcheck": true,
   "readableLineLength": true,
   "autoPairMarkdown": true,
   "alwaysUpdateLinks": true,
-  "autoConvertHtml": false
+  "autoConvertHtml": false,
+  "showRibbon": false,
+  "foldHeading": true,
+  "showLineNumber": false
 }

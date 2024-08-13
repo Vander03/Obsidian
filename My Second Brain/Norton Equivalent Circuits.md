@@ -9,7 +9,7 @@ $$ i_{sc} = i_{sc} $$
 $$\therefore i_{sc} = \frac{v_{Th}}{R_{Th}} $$
 The relationship between Thevenin and Norton equivalent circuits have the following relationship:
 $$ R_{Th} = R_p $$
-##### Example:
+##### 0.1.1.1 Example:
 Find the Norton equivalent for a 9V battery:
 ![[Pasted image 20230323160313.png|200]]
 Using $i_{sc} = \frac{v_{oc}}{R_{Th}}$:

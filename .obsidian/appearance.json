@@ -1,10 +1,13 @@
 {
-  "accentColor": "",
+  "accentColor": "#9900ff",
   "enabledCssSnippets": [
     "bold",
     "commentcolor",
     "headcolour",
-    "linkcolor"
+    "linkcolor",
+    "allign",
+    "invert"
   ],
-  "cssTheme": "GitHub Theme"
+  "cssTheme": "GitHub Theme",
+  "translucency": true
 }

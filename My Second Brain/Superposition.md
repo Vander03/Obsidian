@@ -7,7 +7,7 @@ Turning a sources "off" means to set its value to 0:
 For a voltage source $v = 0V$, hence we can treat it as a [[Short Circuit]]
 For a current source $i=0A$, hence we can treat it as an [[Open Circuit]]
 
-##### Example:
+##### 0.1.1.1 Example:
 Find voltage at node a by superposition.
 First find contribution from voltage source (open circuit the current source)
 ![[Pasted image 20230326164224.png|300]]

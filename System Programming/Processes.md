@@ -4,7 +4,7 @@ Objectives
 - T describe the various features of processes, including scheduling, creation and termination, and communication
 - To explore inter-process communication using shared memory and message passing
 
-## Process
+## 1 Process
 - A batch system has jobs
 - Time shared system has user programs/tasks
 - **Process** - a program in execution; process execution must process in sequential fashion
@@ -47,7 +47,7 @@ Objectives
 		- Time is dependent on hardware support, if multiple registers are allowed per cpu multiple contexts can be loaded at once
 ![400](Pasted%20image%2020230808193820.png)
 
-## Process Scheduler
+## 2 Process Scheduler
 - The process scheduler maximises cpu usage, switches processes onto cpu for time sharing
 - **Process Scheduler** selects among available processes for next execution on cpu
 - Maintains scheduling queues
@@ -73,7 +73,7 @@ Objectives
 	
 
 
-## Process Creation
+## 3 Process Creation
 - Parents create children resources, forming a tree
 - Processes are identified and managed with the pid (process identifier)
 - Resource sharing options
@@ -90,7 +90,7 @@ Objectives
 	- fork() creates a new process
 	- exec() sys call used after fork, replaces program mem with a new program
 
-## Process Termination
+## 4 Process Termination
 - Process executes last statement and asks operating system to delete it (exit())
 	- output data from child to parent(via wait())
 	- process' resources are deallocated by operating system
@@ -105,7 +105,7 @@ Objectives
 - if no parent waiting - process is a zombie
 - if parent terminated, processes are orphans
 
-## Inter-Process Communication
+## 5 Inter-Process Communication
 - Programs can be either independent or cooperating
 - Cooperating can be affected or affect other programs
 - Reasons

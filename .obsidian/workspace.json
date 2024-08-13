@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c8992965f76a4cf9",
+        "id": "f45c7298d6aa93cc",
         "type": "tabs",
         "children": [
           {
-            "id": "45cef3bdbbaf6ce1",
+            "id": "e8d7b5b03e7abffc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Useful Functions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4aa92096dd320f99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "EGB342/Week 1.md",
+                "file": "EGB342/Week 4 - Introduction to Information theory.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "instantan",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.50390243530273,
-    "collapsed": true
+    "width": 279.50390243530273
   },
   "right": {
     "id": "84cb43bb8b7ef82e",
@@ -119,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "EGB342/Week 1.md",
+                "file": "EGB342/Week 4 - Introduction to Information theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "EGB342/Week 1.md",
+                "file": "EGB342/Week 4 - Introduction to Information theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "EGB342/Week 1.md"
+                "file": "EGB342/Week 4 - Introduction to Information theory.md"
               }
             }
           },
@@ -188,44 +174,48 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4aa92096dd320f99",
+  "active": "e8d7b5b03e7abffc",
   "lastOpenFiles": [
-    "CAB202/attachments/Pasted image 20240724233424.png",
-    "CAB202/attachments/Pasted image 20240724232725.png",
-    "CAB202/attachments/Pasted image 20240724232701.png",
-    "CAB202/attachments/Pasted image 20240724232417.png",
-    "CAB202/attachments/Pasted image 20240724232203.png",
-    "CAB202/attachments/Pasted image 20240724231908.png",
-    "CAB202/attachments/Pasted image 20240724231534.png",
-    "CAB202/attachments/Pasted image 20240724231351.png",
-    "CAB202/attachments/Pasted image 20240724231041.png",
-    "CAB202/attachments/Pasted image 20240724230820.png",
-    "CAB202/attachments/Pasted image 20240724230156.png",
-    "Java/Useful Functions.md",
-    "EGB342/Week 1.md",
-    "CAB301/Tutorials.md",
-    "CAB203/Tutorials.md",
-    "CAB203/Sets.md",
-    "CAB203/Predicate Logic.md",
-    "Java/Persistence in Java.md",
-    "Website Design/CSS.md",
-    "CAB203/Propositional Logic.md",
-    "CAB301/Basic Sorting Algorithms.md",
-    "CAB301/Analysis of Algorithms.md",
-    "Javascript/Assignment Notes.md",
-    "CAB301/Search Algorithms.md",
-    "CAB301/Linear Data Structures.md",
-    "CAB301/Introduction to Algorithms and Complexity.md",
-    "CAB301/Binary Tree.md",
-    "CAB203/Bits and Data Representations.md",
-    "Java/JavaFX.md",
-    "Java/Design and Usability.md",
-    "Java/Abstract Classes, Concrete Classes and Interfaces.md",
+    "EGB342/Week 3 - Digital Baseband Modulation.md",
+    "EGB342/Week 4 - Introduction to Information theory.md",
+    "!Definition.md",
+    "CAB202/attachments/Pasted image 20240813174520.png",
+    "CAB202/attachments/Pasted image 20240813174337.png",
+    "CAB202/attachments/Pasted image 20240812224526.png",
+    "EGB342/Week 2 - Angle Modulation.md",
+    "EGB348/Week 3 - Bipolar Junction Transistors (BJT).md",
+    "EGB348/Week 3 - Diode Applications II.md",
+    "CAB202/attachments/Pasted image 20240811231001.png",
+    "CAB202/attachments/Pasted image 20240811230949.png",
+    "CAB202/attachments/Pasted image 20240811230737.png",
+    "CAB202/attachments/Pasted image 20240811230717.png",
+    "CAB202/attachments/Pasted image 20240811230703.png",
+    "CAB202/attachments/Pasted image 20240811230643.png",
+    "CAB202/attachments/Pasted image 20240811230508.png",
+    "EGB348/Week 2 - Diode Applications.md",
+    "EGB348/Week 1 - Semiconductors.md",
+    "EGB348/Week 2 - Recitifiers.md",
+    "Javascript/Asynchronous.md",
+    "Javascript/Node and NPM.md",
+    "Javascript/Network Communication.md",
     "Javascript/Modern UI.md",
     "Javascript/Lecture 4 Notes.md",
     "Javascript/Hooks and Components.md",
-    "Javascript/Asynchronous.md",
+    "Javascript/React.md",
+    "Javascript/Objects.md",
+    "Javascript/Assignment Notes.md",
     "Javascript/Arrays.md",
+    "C - Programming/Grand Central Dispatch.md",
+    "C - Programming/Function Pointer.md",
+    "C - Programming/Pthreads.md",
+    "C - Programming/OpenMP.md",
+    "System Programming/Processes.md",
+    "System Programming/Operating Systems.md",
+    "System Programming/Distributed Systems.md",
+    "EGB348/Paul Horowitz, Winfield Hill-The Art of Electronics-Cambridge University Press (2015).pdf",
+    "My Second Brain/Home Page.canvas",
+    "EGB348/electircal_alan_hambley7th.pdf",
+    "EGB348",
     "!Classes/Untitled",
     "!Classes",
     "Ideas",
@@ -233,10 +223,6 @@
     "React",
     "CAB302",
     "Javascript",
-    "CAB301",
-    "Java",
-    "CAB203",
-    "Code Snippets",
-    "My Second Brain/Home Page.canvas"
+    "CAB301"
   ]
 }
