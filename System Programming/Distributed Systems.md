@@ -11,7 +11,7 @@ Some operating systems generalise network access as a form of file access, with 
 ![500](Pasted%20image%2020230912151730.png)
 
 
-## Advantages of Distributed Systems
+## 1 Advantages of Distributed Systems
 - Resource sharing
 	- Sharing and printing files at remote sites
 	- Processing information in a distributed database
@@ -25,7 +25,7 @@ Some operating systems generalise network access as a form of file access, with 
 Computers can be downsized, more flexibility, better user interfaces and easier maintenance by moving from large system, to multiple smaller systems performing distributed computing.
 
 
-## Types of Network-Based Operating Systems
+## 2 Types of Network-Based Operating Systems
 **Network-Operating System**
 - Users are aware of multiple machines
 - Access to resources of various machines done explicitly by:
@@ -50,7 +50,7 @@ Computers can be downsized, more flexibility, better user interfaces and easier 
 	- **Data access** - run process remotely, rather than transfer all data locally
 
 
-## Network Structure 
+## 3 Network Structure 
 **Local-Area network (LAN)** - Generally considered to be at the same site, only covers small geographical area
 - Multiple topologies like star or ring 
 - Speeds from 1Mb per second (bluetooth, Appletalk) to 40Gbps for fastest Ethernet over twisted pair copper or optical fibre
@@ -72,7 +72,7 @@ Computers can be downsized, more flexibility, better user interfaces and easier 
 	- Cell phones use radio waves to cell towers
 	- Towers connect to other towers and hubs
 
-## Communications structure
+## 4 Communications structure
 The design of a communication network must address four basic issues:
 - **Naming and name resolution** - How do two processes locate each other to communicate?
 	- Address messages with the process-id
@@ -123,7 +123,7 @@ Sockets can be either
 - Packed based or stream based
 - Reliable or unreliable
 
-## Sockets
+## 1 Sockets
 Sockets are defined by their domain, type and transport protocol
 **Common domains:**
 - AF_UNIX: address format is UNIX pathname
@@ -138,7 +138,7 @@ Sockets are defined by their domain, type and transport protocol
 **Connection-based sockets** communicate client-server: the server waits for a connection from the client
 **Connectionless sockets** are peer-to-peer: each process is symmetric
 
-## BSD Socket APIs
+## 2 BSD Socket APIs
 
 **Connection based socket - TCP**
 -  `socket`: creates a socket of a given domain, type, protocol **client/server**
@@ -161,7 +161,7 @@ Sockets are defined by their domain, type and transport protocol
 - `close`
 ![200](Pasted%20image%2020230912185607.png)
 
-## Socket APIs
+## 3 Socket APIs
 ```c
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -183,9 +183,9 @@ protocol:IPPROTO_TCP (Transmission Control Protocol) // Protocol can be left out
 
 ```
 
-## Functions
+## 4 Functions
 
-### Bind
+### 4.1 Bind
 ```c
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -200,7 +200,7 @@ the original structure is provided via addrlen so it can be used within sockets.
 
 ```
 
-## Server Code
+## 5 Server Code
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -233,7 +233,7 @@ int main(int argc, char **argv)
 }
 ```
 
-## Client Code
+## 6 Client Code
 
 ```c
 #include <stdio.h>
@@ -265,7 +265,7 @@ return 0;
 ```
 
 
-## Endian
+## 7 Endian
 network numbering uses big endian (hex values up front, 39 30 00 00)
 Host uses small endian (hex values at end, 00 00 30 39)
 In order for us to communicate, this needs to be converted:
@@ -280,13 +280,13 @@ ntohl(int) // network to host, integer so l for long - Uses more bandwidth
 Most of the internet is little endian
 
 # Issues
-## Sending and receiving more than one data
+## 1 Sending and receiving more than one data
 Because it is a stream of information, errors can be caused when the stream is closed prematurely. For eg. if a client sends data twice with a delay in between and the receiver only receives once, it will accept the initial data then close down as it is satisfied it had received that data, when the other send then sends the data an error occurs as there is no receive. Point is the receive doesn't know how much is coming.
 
 **Fix is to abstract** - create a function, see `sendMessage` in Client Code below.
 # Implementation Examples
 
-## Server Code
+## 1 Server Code
 ```c
 #include <stdio.h>
 #include <sys/types.h>
@@ -355,7 +355,7 @@ int main(int argc, char **argv) {
 
 ```
 
-## Client Code
+## 2 Client Code
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -527,7 +527,7 @@ int main()
 	close(fd)
 }
 ```
-## Endians Commands
+## 1 Endians Commands
 ```c
 // Host byte order short - Host to network short
 printf("htons(%d) = %d\n", <port>, htons(<port>)); 
@@ -540,7 +540,7 @@ printf("ntohl(%d) = %d\n", <port>, ntohl(<port>));
 ```
 They convert between host byte order (host machine) to the the network byte order, or vice verse Which can be either a short (`htons()`) or a long (`htonl()`).
 Where byte order is how we store the data. i.e. Endianness. 
-### Example
+### 1.1 Example
 Passing a port `12345`. 
 ```c
 htons(12345) = 14640
@@ -562,7 +562,7 @@ cval = &val;
 printf("%d = %x %x %x %x\n",val, cval[0], cval[1], cval[2], cval[3]);
 // Prints: 12345 = 39 30 0 0
 ```
-## Sending/Receiving Multiple Packets
+## 2 Sending/Receiving Multiple Packets
 Client side:
 ```c
 // Message sending function
@@ -614,7 +614,7 @@ free(msg2);
 ```
 # Netcat
 Used for testing network connectivity.
-### Netcat client:
+### 0.1 Netcat client:
 ```c
 nc localhost <port>
 // Send bytes
@@ -627,7 +627,7 @@ Send file data:
 ```c
 nc localhost <port> < data.txt
 ```
-### Netcat server:
+### 0.2 Netcat server:
 ```c
 nc -l -p <port> // Bind and listen on 12345 port
 ```

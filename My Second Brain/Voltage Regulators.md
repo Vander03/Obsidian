@@ -10,12 +10,12 @@ When designing a Zener voltage regulator, the following should be taken into acc
 - A Zener voltage regulator always draws power from the source, regardless of the load
 - The load has an effect on the regulator
 ![[Pasted image 20230521175045.png|centre|300]]
-## Maximum Load Current
+## 1 Maximum Load Current
 Given a source voltage range $v_s$ and a source resistance $R_s$, the maximum current an ideal Zener diode can regulate is given by:
 $$i_L < \cfrac{v_s-v_z}{R_s}$$
 where the largest value in $v_s$ is chosen.
 
-## Maximum Source Resistance
+## 2 Maximum Source Resistance
 Given a source voltage range $v_s$ and load current range $i_L$, the maximum source resistance required to regulate the output voltage is given by:
 $$R_s<\cfrac{v_s-v_z}{i_L}$$
 where the smallest value in $v_s$ is chosen, and the largest value in $i_L$ is chosen.
@@ -23,7 +23,7 @@ where the smallest value in $v_s$ is chosen, and the largest value in $i_L$ is c
 # Series Regulators
 Series regulators regulate the output voltage by limiting the load current by varying the series element.
 
-## Series Linear Regulators
+## 1 Series Linear Regulators
 LM-series [[Integrated Circuits]] are a three-terminal linear regulator that regulate fixed voltages of 0.5V to 24V. They require an input voltage at least 2V greater than the regulated output voltage. The capacitors remain the same forany output voltage.
 ![[Pasted image 20230521180647.png]]
 
@@ -31,7 +31,7 @@ The naming convention is as follows,
 1. LM78XX regulates a positive voltage of XX (LM7805 = 5V)
 2. LM79XX regulates a negative voltage of XX (LM7905 = -5V)
 
-### Power Dissipation
+### 1.1 Power Dissipation
 How much power will be dissipated by the regulator?
 ![[Pasted image 20230521184847.png|300]]
 
@@ -41,14 +41,14 @@ $v_i = 12V$, $v_o=5V$. So the voltage dissipated must be:
 $$V=12-5=7V$$
 Therefore the power dissipated by the regulator is:
 $$P=VI=7\times0.5=3.5W$$
-## Op-Amps as a Regulator
+## 2 Op-Amps as a Regulator
 [[Operational Amplifiers]] can be utilised to stabilise the output from a regulator. The op amp is powered by the source voltage and the series resistance is chosen to minimise the current through the Zender diode.
 ![[Pasted image 20230521210923.png|centre|400]]
 In the cirucit above, $i_Z + i_S = 0$
 
 The power dissipated by the cirucit can be determined by finding the power produced at the voltage source which is given by:
 $$p=v_{in}(i_L-i_Z)$$
-#### Example Op-amp as a regulator
+#### 2.1.1 Example Op-amp as a regulator
 What is the voltage across $R_L$?
 ![[Pasted image 20230521211430.png]]
 Since the Op amp is a[[Operational Amplifiers#Voltage Follower / Voltage Buffer| Voltage Follower]], $v_{in}=v_{out}$
@@ -56,7 +56,7 @@ Since the Op amp is a[[Operational Amplifiers#Voltage Follower / Voltage Buffer|
 So knowing that $v_Z = 5V$:
 $$v_Z=v_{in}=v_{out}=v_L = 5V$$
 
-#### Example 2 
+#### 2.1.2 Example 2 
 ![[Pasted image 20230521212106.png]]
 
 What base op-amp circuit does this regulator use?

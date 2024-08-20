@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EGB342/Week 4 - Introduction to Information theory.md",
+                "file": "EGB348/Week 5 - Linear Amplifiers and Field Effect Transistors.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "instantan",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.50390243530273
+    "width": 279.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "84cb43bb8b7ef82e",
@@ -105,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "EGB342/Week 4 - Introduction to Information theory.md",
+                "file": "EGB348/Week 5 - Linear Amplifiers and Field Effect Transistors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "EGB342/Week 4 - Introduction to Information theory.md",
+                "file": "EGB348/Week 5 - Linear Amplifiers and Field Effect Transistors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "EGB342/Week 4 - Introduction to Information theory.md"
+                "file": "EGB348/Week 5 - Linear Amplifiers and Field Effect Transistors.md"
               }
             }
           },
@@ -176,45 +177,45 @@
   },
   "active": "e8d7b5b03e7abffc",
   "lastOpenFiles": [
-    "EGB342/Week 3 - Digital Baseband Modulation.md",
-    "EGB342/Week 4 - Introduction to Information theory.md",
-    "!Definition.md",
-    "CAB202/attachments/Pasted image 20240813174520.png",
-    "CAB202/attachments/Pasted image 20240813174337.png",
-    "CAB202/attachments/Pasted image 20240812224526.png",
-    "EGB342/Week 2 - Angle Modulation.md",
-    "EGB348/Week 3 - Bipolar Junction Transistors (BJT).md",
+    "CAB202/attachments/Pasted image 20240820181840.png",
+    "EGB348/Week 4 - BJT and Amplifiers.md",
+    "EGB348/Week 5 - Linear Amplifiers and Field Effect Transistors.md",
     "EGB348/Week 3 - Diode Applications II.md",
-    "CAB202/attachments/Pasted image 20240811231001.png",
-    "CAB202/attachments/Pasted image 20240811230949.png",
-    "CAB202/attachments/Pasted image 20240811230737.png",
-    "CAB202/attachments/Pasted image 20240811230717.png",
-    "CAB202/attachments/Pasted image 20240811230703.png",
-    "CAB202/attachments/Pasted image 20240811230643.png",
-    "CAB202/attachments/Pasted image 20240811230508.png",
+    "EGB348/Week 3 - Bipolar Junction Transistors (BJT).md",
+    "EGB342/Week 3 - Digital Baseband Modulation.md",
     "EGB348/Week 2 - Diode Applications.md",
-    "EGB348/Week 1 - Semiconductors.md",
+    "EGB342/Week 4 - Introduction to Information theory.md",
     "EGB348/Week 2 - Recitifiers.md",
-    "Javascript/Asynchronous.md",
+    "Javascript/Useful Commands.md",
+    "Javascript/SPA and React Router.md",
+    "Javascript/React Context.md",
+    "Javascript/React.md",
+    "Javascript/Objects.md",
     "Javascript/Node and NPM.md",
     "Javascript/Network Communication.md",
     "Javascript/Modern UI.md",
     "Javascript/Lecture 4 Notes.md",
     "Javascript/Hooks and Components.md",
-    "Javascript/React.md",
-    "Javascript/Objects.md",
+    "Javascript/Asynchronous.md",
     "Javascript/Assignment Notes.md",
     "Javascript/Arrays.md",
-    "C - Programming/Grand Central Dispatch.md",
-    "C - Programming/Function Pointer.md",
-    "C - Programming/Pthreads.md",
-    "C - Programming/OpenMP.md",
-    "System Programming/Processes.md",
-    "System Programming/Operating Systems.md",
-    "System Programming/Distributed Systems.md",
-    "EGB348/Paul Horowitz, Winfield Hill-The Art of Electronics-Cambridge University Press (2015).pdf",
-    "My Second Brain/Home Page.canvas",
+    "CAB202/attachments/Pasted image 20240817231805.png",
+    "CAB202/attachments/Pasted image 20240817231718.png",
+    "CAB202/attachments/Pasted image 20240817231618.png",
+    "CAB202/attachments/Pasted image 20240817231605.png",
+    "CAB202/attachments/Pasted image 20240817231455.png",
+    "CAB202/attachments/Pasted image 20240817231430.png",
+    "CAB202/attachments/Pasted image 20240817230846.png",
+    "CAB202/attachments/Pasted image 20240817230833.png",
+    "CAB202/attachments/Pasted image 20240817230744.png",
+    "CAB202/attachments/Pasted image 20240817230711.png",
+    "My Second Brain/Voltage Regulators.md",
     "EGB348/electircal_alan_hambley7th.pdf",
+    "EGB348/Week 1 - Semiconductors.md",
+    "Untitled.md",
+    "EGB348/Paul Horowitz, Winfield Hill-The Art of Electronics-Cambridge University Press (2015).pdf",
+    "CAB203/Sets.md",
+    "My Second Brain/Home Page.canvas",
     "EGB348",
     "!Classes/Untitled",
     "!Classes",

@@ -1,3 +1,5 @@
+![[Pasted image 20240811230047.png|300]]
+
 The Bipolar Junction Transistor (BJT) consists of three separately doped regions and two PN junctions. It has 3 terminals, called the Emitter (E), Base (B) and Collector (C). The transistor current is due to the flow of both electrons and holes, which is why these are called **bipolar** transistors.
 
 ![[Pasted image 20240811221640.png]]
@@ -27,6 +29,7 @@ If + is facing + of power source, forward bias
 
 
 #### 1.1.2 Formulas
+![[Pasted image 20240811221640.png|500]]
 - Base-emitter junction is forward biased, and base-collector is reverse biased.
 - Shockley diode equation:
 $$i_E = I_{ES} \left(e^{\frac{v_{BE}}{V_T}}-1\right) \approx I_{E0}e^{\frac{v_{BE}}{\eta V_T}}$$
@@ -62,37 +65,43 @@ $$i_E = (\beta + 1)i_B$$
 - Transistors circuits can sometimes be designed to compensate for variability in $\beta$
 
 ## 2 Common Emitter Characteristics
+### 2.1 NPN
 An NPN transistor connected in the common-emitter configuration is shown
 ![[Pasted image 20240811225641.png|500]]
 
 - The DC power supply voltages $V_{BB}$ and $V_{CC}$ **bias** the device at an **operating point** (or quiescent point, or bias point).
+
+
 - Let’s say that a small AC signal $v_{in}$ is superimposed on the bias voltage at the base.
 - This will result in a small AC $i_b , v_{be} , i_c , i_e$ and $v_{ce}$ being added to the DC bias values.
 
-![[Pasted image 20240811230020.png]]
+![[Pasted image 20240811230020.png|500]]
 
-![[Pasted image 20240811230047.png|500]]
-### 2.1 Example
-![[Pasted image 20240811230139.png|600]]
-![[Pasted image 20240811230156.png|600]]
+![[Pasted image 20240811230047.png|400]]
+### 2.2 Example
+![[Pasted image 20240811230139.png|400]]
+![[Pasted image 20240811230156.png|400]]
 
-![[Pasted image 20240811230324.png|600]]
+**NOTE BELOW** the change in $v_{BE}$ to $V_{BE}$ when the AC factor is ignored and only DC considered
+![[Pasted image 20240811230324.png|400]]
 
-![[Pasted image 20240811230350.png|600]]
+![[Pasted image 20240811230350.png|400]]
 
-![[Pasted image 20240811230455.png|600]]
+**NOTE:** considering AC's effect on the circuit 
+![[Pasted image 20240811230455.png|400]]
 
-![[Pasted image 20240811230508.png|600]]
+![[Pasted image 20240811230508.png|400]]
 
-![[Pasted image 20240811230643.png|600]]
+![[Pasted image 20240811230643.png|400]]
 
-![[Pasted image 20240811230703.png|600]]
+![[Pasted image 20240811230703.png|400]]
 
-![[Pasted image 20240811230717.png|600]]
+**NOTE:** superimposing the load line of the input on the output gives us the output per input voltage
+![[Pasted image 20240811230717.png|400]]
 
 ![[Pasted image 20240811230737.png|600]]
 
-### 2.2 Nonlinear Distortion
+### 2.3 Nonlinear Distortion
 - Although not obvious in the plots of input and output on the previous slide, there is some distortion, due to the nonlinear characteristic of $i_B$ versus $v_{BE}$.
 - If $v_{in}$ becomes large enough, the instantaneous operating point may move far up and down enough the load line to enter the saturation and cutoff regions. In this case, obvious distortion in the output will occur.
 
@@ -100,6 +109,12 @@ An NPN transistor connected in the common-emitter configuration is shown
 
 ![[Pasted image 20240811231001.png|600]]
 
+
+### 2.4 PNP
+Is the exact same as NPN, but instead of going from E to B we go from B to E. The notation also changes, e.g. $V_{BE} \rightarrow V_{EB}$
+![[Pasted image 20240814203016.png|499]]
+ ![[Pasted image 20240814203117.png|400]]
+ 
 
 ## 3 BJT Packaging
 
