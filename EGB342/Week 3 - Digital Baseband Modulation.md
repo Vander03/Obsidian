@@ -111,7 +111,7 @@ $$
 P(f) = 
 \begin{cases}
 1 & |f| < \frac{1-r}{2T_s} \\
-\frac{1}{2}\left[1 + \cos\left(\frac{nT_s}{r}\left[|f| - \frac{1-r}{2T_s} \right] \right) \right] & \frac{1-r}{2T_s} \leq f < \frac{1+r}{2T_s} \\
+\frac{1}{2}\left[1 + \cos\left(\frac{\pi T_s}{r}\left[|f| - \frac{1-r}{2T_s} \right] \right) \right] & \frac{1-r}{2T_s} \leq f < \frac{1+r}{2T_s} \\
 0 & |f| \geq \frac{l+r}{2T_s}
 \end{cases}
 $$

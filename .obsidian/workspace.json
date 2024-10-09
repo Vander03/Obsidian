@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f45c7298d6aa93cc",
+        "id": "dbe1dfa9f6f02845",
         "type": "tabs",
         "children": [
           {
-            "id": "e8d7b5b03e7abffc",
+            "id": "c649d6500694d1ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EGB348/Week 5 - Linear Amplifiers and Field Effect Transistors.md",
+                "file": "EGB342/Week 10 - RF Receivers.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.50390243530273,
+    "width": 297.5,
     "collapsed": true
   },
   "right": {
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "EGB348/Week 5 - Linear Amplifiers and Field Effect Transistors.md",
+                "file": "EGB342/Week 10 - RF Receivers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "EGB348/Week 5 - Linear Amplifiers and Field Effect Transistors.md",
+                "file": "EGB342/Week 10 - RF Receivers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "EGB348/Week 5 - Linear Amplifiers and Field Effect Transistors.md"
+                "file": "EGB342/Week 10 - RF Receivers.md"
               }
             }
           },
@@ -175,46 +175,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8d7b5b03e7abffc",
+  "active": "c649d6500694d1ad",
   "lastOpenFiles": [
-    "CAB202/attachments/Pasted image 20240820181840.png",
+    "CAB202/attachments/Pasted image 20241009211456.png",
+    "CAB202/attachments/Pasted image 20241009211217.png",
+    "CAB202/attachments/Pasted image 20241009205337.png",
+    "CAB202/attachments/Pasted image 20241009203852.png",
+    "CAB202/attachments/Pasted image 20241009203819.png",
+    "CAB202/attachments/Pasted image 20241009203208.png",
+    "CAB202/attachments/Pasted image 20241009202241.png",
+    "CAB202/attachments/Pasted image 20241009200854.png",
+    "CAB202/attachments/Pasted image 20241009200821.png",
+    "CAB202/attachments/Pasted image 20241009200639.png",
+    "CAB202/attachments/Pasted image 20241009194752.png",
+    "EGB342/Week 8 - Digital Passband Modulation.md",
+    "EGB342/Week 10 - RF Receivers.md",
+    "EGB342/Week 7 - RF Amplifiers.md",
+    "EGB342/Week 6 - S-Parameters.md",
+    "EGB342/Week 7 - Filter.md",
+    "EGB342/Week 6 - Mixers.md",
+    "EGB342/Week 6 - Frequency Generation and Translation.md",
+    "EGB342/Week 5 - Introduction to Source Coding.md",
+    "EGB348/Week 7 - Operational Amplifiers.md",
+    "EGB348/Week 8 - Op Amp Circuits.md",
+    "EGB348/Week 9 - Op Amps and Filters.md",
+    "EGB348/Week 10.md",
+    "EGB348/Week 6 - MOS Field Effect Transistors (MOSFET).md",
     "EGB348/Week 4 - BJT and Amplifiers.md",
-    "EGB348/Week 5 - Linear Amplifiers and Field Effect Transistors.md",
-    "EGB348/Week 3 - Diode Applications II.md",
+    "EGB348/Week 6 - JFET Amplifier.md",
+    "EGB348/Week 5 - Linear Amplifiers.md",
+    "EGB348/Week 5 - Field Effect Transistors (FET).md",
     "EGB348/Week 3 - Bipolar Junction Transistors (BJT).md",
-    "EGB342/Week 3 - Digital Baseband Modulation.md",
     "EGB348/Week 2 - Diode Applications.md",
-    "EGB342/Week 4 - Introduction to Information theory.md",
     "EGB348/Week 2 - Recitifiers.md",
-    "Javascript/Useful Commands.md",
-    "Javascript/SPA and React Router.md",
-    "Javascript/React Context.md",
-    "Javascript/React.md",
-    "Javascript/Objects.md",
-    "Javascript/Node and NPM.md",
-    "Javascript/Network Communication.md",
-    "Javascript/Modern UI.md",
-    "Javascript/Lecture 4 Notes.md",
-    "Javascript/Hooks and Components.md",
-    "Javascript/Asynchronous.md",
-    "Javascript/Assignment Notes.md",
-    "Javascript/Arrays.md",
-    "CAB202/attachments/Pasted image 20240817231805.png",
-    "CAB202/attachments/Pasted image 20240817231718.png",
-    "CAB202/attachments/Pasted image 20240817231618.png",
-    "CAB202/attachments/Pasted image 20240817231605.png",
-    "CAB202/attachments/Pasted image 20240817231455.png",
-    "CAB202/attachments/Pasted image 20240817231430.png",
-    "CAB202/attachments/Pasted image 20240817230846.png",
-    "CAB202/attachments/Pasted image 20240817230833.png",
-    "CAB202/attachments/Pasted image 20240817230744.png",
-    "CAB202/attachments/Pasted image 20240817230711.png",
-    "My Second Brain/Voltage Regulators.md",
-    "EGB348/electircal_alan_hambley7th.pdf",
+    "EGB342/Week 4 - Introduction to Information theory.md",
+    "EGB348/Week 3 - Diode Applications II.md",
     "EGB348/Week 1 - Semiconductors.md",
-    "Untitled.md",
+    "EGB342/Handwritten Notes/Untitled.md",
+    "EGB342/Week 3 - Digital Baseband Modulation.md",
+    "EGB348/electircal_alan_hambley7th.pdf",
     "EGB348/Paul Horowitz, Winfield Hill-The Art of Electronics-Cambridge University Press (2015).pdf",
-    "CAB203/Sets.md",
     "My Second Brain/Home Page.canvas",
     "EGB348",
     "!Classes/Untitled",
