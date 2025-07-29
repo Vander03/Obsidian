@@ -9,5 +9,7 @@
     "invert"
   ],
   "cssTheme": "GitHub Theme",
-  "translucency": true
+  "translucency": true,
+  "showRibbon": false,
+  "theme": "moonstone"
 }

@@ -30,8 +30,8 @@ img {
     outline: none;
     margin-left: auto;
     margin-right: auto;
-    mix-blend-mode: screen !important;
-    filter: invert(1) hue-rotate(180deg) !important; /* added this to make all images inverted */
+    /* mix-blend-mode: screen !important; */
+    /* filter: invert(1) hue-rotate(180deg) !important;  added this to make all images inverted */
 }
 
 

@@ -7,7 +7,13 @@
   "autoPairMarkdown": true,
   "alwaysUpdateLinks": true,
   "autoConvertHtml": false,
-  "showRibbon": false,
   "foldHeading": true,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 75
+  }
 }

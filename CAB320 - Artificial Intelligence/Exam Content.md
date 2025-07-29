@@ -1,0 +1,41 @@
+Thierry (Part 2)
+- What is machine learning
+- Classification and regression
+	- Regression to determine a number or class
+- Knowing the types of machine learning
+- Linear regression
+- Understanding the process of ML
+	- Data for training and testing etc
+- Supervised learning
+- Regression
+	- Regression will be specified
+	- Loss functions and its role
+	- Over fitting and under fitting
+	- **dont have to worry about regularisation**
+- There will be probabilities (conditional in particular)
+	- Bayes rule
+	- given a scenario with facts (prior probs etc)
+	- always define variables
+- Classification methods
+	- wont have to do an SVM or random forest
+	- Naive bayes classifier etc
+- Should know classification evaluation stuff
+- Questions about proper practice (ethics)
+- f1 score etc need to know how to compute 
+- Binary and multiple classification problems (wont be tons of classes but more than 2)
+- Deep learning
+	- more about understanding proper practice
+	- how do you proceed and whats the roles of different functions
+	- what are recommendations to ensure a good result and how do you know if you've got a good result
+	- "Understand how to go through due process, not understand all the small bits"
+- Examples he shows:
+	- Week 7 ("good examples and types of exercises found in the exam)
+	- "answers here are more detailed than what you need to give in the exam, but more is better"
+- Coding is more about the process than coding
+- Quizzes have relevant questions
+- **will not ask questions about backpropgation**
+
+
+Wills
+- **DYNAMIC PROGRAMMING, ALL 7**
+- theres gonna be a q table
